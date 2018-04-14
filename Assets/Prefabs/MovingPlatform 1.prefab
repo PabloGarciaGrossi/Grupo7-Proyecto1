@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114940747197731576}
   m_Layer: 8
   m_Name: MovingPlatform 1
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

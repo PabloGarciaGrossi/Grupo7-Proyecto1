@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour {
 			transform.parent = null;
 	}
 	public bool Activador (){
-		if (Input.GetKey (KeyCode.B)) {
+		if (Input.GetButtonDown ("Fire1")) {
 			activa = Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, 2f);
 			if (activa.collider != null && activa.collider.tag == "Palanca") {
 				return true;
