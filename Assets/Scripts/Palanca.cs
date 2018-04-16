@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class Palanca : MonoBehaviour {
 	public bool activado = false;
+	public bool palanca;
 	PlayerController activador;
 	void Start (){
 		activador = GameObject.FindWithTag ("Player").GetComponent<PlayerController> ();
 	}
 	void Update (){
+		if (palanca)
+			palancafuncion ();
+		else
+			GetComponent<Boton> ().enabled = true;
+		}
+	void palancafuncion()
+	{
 		if (activador.Activador ()) {
 			if (activado) {
 				gameObject.transform.localScale = new Vector3 (1, 1, 1);
@@ -17,30 +25,6 @@ public class Palanca : MonoBehaviour {
 				gameObject.transform.localScale = new Vector3 (-1, 1, 1);
 				activado = true;
 			}
-		}
 	}
-	/*
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		Debug.Log ("Si");
-		GameObject pers = other.gameObject;
-		if (pers.CompareTag ("Player"))
-			permiso = true;
-	}
-	void OnTriggerExit2D(Collider2D other)
-	{
-		Debug.Log ("Si");
-		GameObject pers = other.gameObject;
-		if (pers.CompareTag ("Player"))
-			permiso = false;
-	}
-	void Update()
-	{
-		if (permiso == true && Input.GetKey (KeyCode.B) && !activado) {
-			activado = true;
-		} else if (permiso == true && Input.GetKey (KeyCode.B) && activado) {
-			activado = false;
-		}
-	}
-	*/
+}
 }
