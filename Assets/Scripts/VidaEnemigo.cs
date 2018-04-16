@@ -11,12 +11,12 @@ public class VidaEnemigo : MonoBehaviour {
 	void Start () {
 		iniciox = transform.position.x;
 		inicioy = transform.position.y;
-		gameObject.transform.GetChild (3).gameObject.SetActive (false);
+		//gameObject.transform.GetChild (3).gameObject.SetActive (false);
 		vidaRestante = maxVida;
 	}
 	public void Damage()
 	{
-		gameObject.transform.GetChild (3).gameObject.SetActive (true);
+		//gameObject.transform.GetChild (3).gameObject.SetActive (true);
 		vidaRestante -= dmg;
 		if (vidaRestante <= 0)
 			gameObject.SetActive (false);
@@ -25,6 +25,6 @@ public class VidaEnemigo : MonoBehaviour {
 		gameObject.SetActive (true);
 		vidaRestante = maxVida;
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);
-		gameObject.GetComponentInChildren<FieldOfViewEnemy> ().Detectado = false;
+		//gameObject.GetComponentInChildren<FieldOfViewEnemy> ().Detectado = false;
 	}
 }
