@@ -12,13 +12,15 @@ public class VidaEnemigo : MonoBehaviour {
 	float iniciox, inicioy;
 	// Use this for initialization
 	void Start () {
-		if (gameObject.tag != "Oruga") {
+		if (gameObject.tag == "Rata") {
 			vel = GetComponent<Rigidbody2D> ().velocity;
-			gameObject.transform.GetChild (3).gameObject.SetActive (false);
+			gameObject.transform.GetChild (0).gameObject.SetActive (false);
+		} else if (gameObject.tag == "Oruga") {
+			speed = GetComponentInChildren<Oruga> ().speed;
+			anim = GetComponent<Animator> ();
 		}
-		else
-			speed = GetComponentInParent<Oruga> ().speed;
-		anim = GetComponent<Animator> ();
+		else if (gameObject.tag == "Mosquito")
+			speed = GetComponent<MosquitoIA> ().speed;
 		iniciox = transform.position.x;
 		inicioy = transform.position.y;
 		vidaRestante = maxVida;
@@ -26,17 +28,20 @@ public class VidaEnemigo : MonoBehaviour {
 	public void Damage()
 	{
 		if (gameObject.tag != "Oruga")
-		gameObject.transform.GetChild (3).gameObject.SetActive (true);
+		gameObject.transform.GetChild (0).gameObject.SetActive (true);
 		vidaRestante -= dmg;
 		if (vidaRestante <= 0) {
-			if (gameObject.tag == "Rata")
+			if (gameObject.tag == "Rata") {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
-			else if (gameObject.tag == "Oruga") {
+			}else if (gameObject.tag == "Oruga") {
 				gameObject.GetComponentInChildren<Oruga> ().speed = 0;
 				anim.SetBool ("Muerte", true);
+			} else if (gameObject.tag == "Mosquito") {
+				gameObject.GetComponent<MosquitoIA> ().speed = 0;
 			}
 			Invoke ("Destruir", 1f);
 		}
+		if (gameObject.tag != "Oruga")
 		Invoke ("DesactivaParticulas", 1);
 	}
 	public void Reset(){
@@ -45,6 +50,8 @@ public class VidaEnemigo : MonoBehaviour {
 			GetComponent<Rigidbody2D> ().velocity = vel;
 		else if (gameObject.tag == "Oruga")
 			gameObject.GetComponentInChildren<Oruga> ().speed = speed;
+		else if (gameObject.tag == "Mosquito")
+			gameObject.GetComponent<MosquitoIA> ().speed = speed;
 		vidaRestante = maxVida;
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);
 		//gameObject.GetComponentInChildren<FieldOfViewEnemy> ().Detectado = false;
@@ -53,6 +60,6 @@ public class VidaEnemigo : MonoBehaviour {
 		gameObject.SetActive (false);
 	}
 	void DesactivaParticulas(){
-		gameObject.transform.GetChild (3).gameObject.SetActive (false);
+		gameObject.transform.GetChild (0).gameObject.SetActive (false);
 	}
 }
