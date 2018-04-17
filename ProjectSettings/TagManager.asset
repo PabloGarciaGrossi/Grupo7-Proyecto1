@@ -10,6 +10,8 @@ TagManager:
   - pushable
   - Generador
   - Enganchado
+  - Rata
+  - Oruga
   layers:
   - Default
   - TransparentFX
