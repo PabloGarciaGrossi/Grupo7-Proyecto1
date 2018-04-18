@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour {
     }
 	void Update()
 	{
-		if (Input.GetKeyDown (KeyCode.Space) && enTierra) {
+		if (Input.GetButtonDown ("Jump") && enTierra) {
 			enTierra = false;
 			rb.AddForce (new Vector2 (0, playerJump), ForceMode2D.Impulse);
 			playerAnim.SetBool ("jump", true);
