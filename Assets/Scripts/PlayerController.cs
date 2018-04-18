@@ -64,9 +64,9 @@ public class PlayerController : MonoBehaviour {
 	}
 	void Girar (bool miraDerecha){
 		if (miraDerecha) {
-			gameObject.transform.localScale = new Vector3 (1, 1, 1);
+			gameObject.transform.localScale = new Vector3 (0.6f, 0.6f, 1);
 		} else {
-			gameObject.transform.localScale = new Vector3 (-1, 1, 1);
+			gameObject.transform.localScale = new Vector3 (-0.6f, 0.6f, 1);
 		}
 	}
 	void OnTriggerEnter2D(Collider2D other)
