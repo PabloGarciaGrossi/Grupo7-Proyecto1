@@ -10,6 +10,7 @@ public class FieldOfViewEnemy : MonoBehaviour {
 	public LayerMask obstacleMask;
 	public List<Transform> visibleTargets = new List<Transform>();
 	public bool Detectado;
+	public float dst;
 
 	void Start(){
 		InvokeRepeating ("FindVisibleTargets", 0f, 0.2f);
@@ -43,7 +44,11 @@ public class FieldOfViewEnemy : MonoBehaviour {
 				}
 			} else
 				Detectado = false;
+
+
+			dst = Vector3.Distance (transform.position, target.position);
 		}
+
 	}
 
 	public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal){
