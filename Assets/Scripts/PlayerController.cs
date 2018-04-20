@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
 		if (other.transform.tag == "MovingPlatform")
 			transform.parent = null;
 	}
-	public bool Activador (){
+	/*public bool Activador (){
 		if (Input.GetButtonDown ("Fire1")) {
 			activa = Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, 2f);
 			if (activa.collider != null && activa.collider.tag == "Palanca") {
@@ -90,7 +90,17 @@ public class PlayerController : MonoBehaviour {
 				return false;
 		} else
 			return false;
+	}*/
+	/*public void Activador()
+	{
+		if (Input.GetButtonDown ("Fire1")) 
+		{
+			activa = Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, 2f);
+			if (activa.collider != null && activa.collider.tag == "Palanca")
+				activa.collider.GetComponent<Palanca> ().activado = true;
+		}
 	}
+	*/
 	void DibujaActivador()
 	{
 		Gizmos.color = Color.blue;
