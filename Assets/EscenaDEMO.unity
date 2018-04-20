@@ -660,7 +660,6 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 1, y: -48, z: 0}
-=======
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -50065,7 +50064,6 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 1, y: -20, z: 0}
-=======
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 4084
@@ -50830,7 +50828,6 @@ Tilemap:
   m_Enabled: 1
   m_Tiles:
   - first: {x: 0, y: -7, z: 0}
->>>>>>> a64cb2ded2505c6dc144335fdbdf660a4399d0da
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
@@ -57167,7 +57164,6 @@ Tilemap:
   m_GameObject: {fileID: 1497479851}
   m_Enabled: 1
   m_Tiles:
->>>>>>> a64cb2ded2505c6dc144335fdbdf660a4399d0da
   - first: {x: 24, y: -12, z: 0}
     second:
       m_TileIndex: 0
@@ -136844,7 +136840,6 @@ CompositeCollider2D:
       - X: 430000000
         Y: 240000000
       - X: 430000000
-=======
     - - X: 640000000
         Y: 369999968
       - X: 630000064
@@ -139988,13 +139983,6 @@ CompositeCollider2D:
         Y: 110000000
     - - X: 319000000
         Y: 110000000
-<<<<<<< HEAD
-      - X: 320000000
-        Y: 110285712
-      - X: 320000000
-        Y: 110000000
-    - - X: 279000000
-=======
     - - X: 340000000
         Y: 119999968
       - X: 330000032
@@ -141391,25 +141379,9 @@ CompositeCollider2D:
     - - X: 530000000
         Y: 79999976
       - X: 520000032
->>>>>>> a64cb2ded2505c6dc144335fdbdf660a4399d0da
         Y: 80000000
       - X: 790000000
         Y: 70000008
-<<<<<<< HEAD
-      - X: 800000000
-        Y: 70000000
-      - X: 800000000
-        Y: 70000008
-      - X: 810000000
-        Y: 70000000
-      - X: 810000000
-        Y: 70000008
-      - X: 820000000
-        Y: 70000000
-      - X: 820000000
-        Y: 70000008
-      - X: 830000000
-=======
       - X: 529999968
         Y: 70000000
     - - X: 379714272
@@ -143392,7 +143364,6 @@ CompositeCollider2D:
       - X: -179428576
         Y: 40000024
       - X: -170000016
->>>>>>> a64cb2ded2505c6dc144335fdbdf660a4399d0da
         Y: 40000000
     - - X: 600000000
         Y: 49999996
