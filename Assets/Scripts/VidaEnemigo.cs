@@ -18,9 +18,10 @@ public class VidaEnemigo : MonoBehaviour {
 		} else if (gameObject.tag == "Oruga") {
 			speed = GetComponentInChildren<Oruga> ().speed;
 			anim = GetComponent<Animator> ();
-		}
-		else if (gameObject.tag == "Mosquito")
+		} else if (gameObject.tag == "Mosquito") {
+			gameObject.transform.GetChild (0).gameObject.SetActive (false);
 			speed = GetComponent<MosquitoIA> ().speed;
+		}
 		iniciox = transform.position.x;
 		inicioy = transform.position.y;
 		vidaRestante = maxVida;

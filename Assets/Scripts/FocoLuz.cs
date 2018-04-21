@@ -26,8 +26,8 @@ public class FocoLuz : MonoBehaviour {
 			fov.viewRadius = 5;
 			luz.range = 5;
 		} else {
-			fov.viewRadius = 10;
-			luz.range = 10;
+			fov.viewRadius = 12;
+			luz.range = 12;
 		}
 	}
 }

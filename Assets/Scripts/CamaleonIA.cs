@@ -9,7 +9,7 @@ public class CamaleonIA : MonoBehaviour {
 	public float minTras, maxTras;
 	// Use this for initialization
 	void Start () {
-		sr = GetComponent<SpriteRenderer> ();
+		sr = GetComponentInChildren<SpriteRenderer> ();
 		fove = GetComponent<FieldOfViewEnemy> ();
 	}
 
