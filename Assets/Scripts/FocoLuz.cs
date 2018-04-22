@@ -6,6 +6,7 @@ public class FocoLuz : MonoBehaviour {
 	public float disminucion;
 	public FieldOfView fov;
 	public Light luz;
+	public DynamicLight2D.DynamicLight luz2;
 
 	// Use this for initialization
 	void Start () {
@@ -20,14 +21,15 @@ public class FocoLuz : MonoBehaviour {
 	void DisminuyePotencia(){
 		fov.viewRadius = gameObject.GetComponent<Light> ().range;
 		luz.range -= disminucion;
+		luz2.LightRadius = luz.range;
 	}
 	public void Reset(){
 		if (fov.viewRadius < 5) {
 			fov.viewRadius = 5;
 			luz.range = 5;
 		} else {
-			fov.viewRadius = 12;
-			luz.range = 12;
+			fov.viewRadius = 10;
+			luz.range = 10;
 		}
 	}
 }
