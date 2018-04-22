@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+	bool isDead = false;
 	Rigidbody2D rb;
 	RaycastHit2D activa;
 	public float playerSpeed;
@@ -12,12 +13,16 @@ public class PlayerController : MonoBehaviour {
 	public Transform posJugador, posSuelo;
     Animator playerAnim;
 	Transform tamaño;
+	MosquitoIA[] mosquito;
+	IAenemigo[] rata;
 	// Use this for initialization
 	void Awake () {
 		rb = gameObject.GetComponent<Rigidbody2D> ();
 		enTierra = true;
 		miraDerecha = true;
 		tamaño = gameObject.transform;
+		mosquito = FindObjectsOfType<MosquitoIA> ();
+		rata = FindObjectsOfType <IAenemigo> ();
 	}
     void Start()
     {
@@ -26,25 +31,29 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
-		Girar (miraDerecha);
-		DetectaSuelo ();
-		float move = Input.GetAxis ("Horizontal");
-		playerAnim.SetFloat ("Speed", Mathf.Abs (move));
-		if (move > 0){
-			miraDerecha = true;
-            rb.velocity = new Vector2 (playerSpeed, rb.velocity.y);
-        }
-		else if (move < 0) {
-			miraDerecha = false;
-            rb.velocity = new Vector2 (-playerSpeed, rb.velocity.y);
-        }
-		else if (move == 0 && enTierra)
-			playerAnim.SetBool ("idle", true);
-
+		if (!isDead) {
+			Girar (miraDerecha);
+			DetectaSuelo ();
+			float move = Input.GetAxis ("Horizontal");
+			playerAnim.SetFloat ("Speed", Mathf.Abs (move));
+			if (move > 0) {
+				miraDerecha = true;
+				rb.velocity = new Vector2 (playerSpeed, rb.velocity.y);
+			} else if (move < 0) {
+				miraDerecha = false;
+				rb.velocity = new Vector2 (-playerSpeed, rb.velocity.y);
+			} else if (move == 0 && enTierra)
+				playerAnim.SetBool ("idle", true);
+		} else {
+			if (Input.GetKey (KeyCode.R)) {
+				isDead = false;
+				GameManager.instance.RespawnPlayer ();
+			}
+		}
     }
 	void Update()
 	{
-		if (Input.GetButtonDown ("Jump") && enTierra) {
+		if (Input.GetButtonDown ("Jump") && enTierra && !isDead) {
 			enTierra = false;
 			rb.AddForce (new Vector2 (0, playerJump), ForceMode2D.Impulse);
 			playerAnim.SetBool ("jump", true);
@@ -81,29 +90,21 @@ public class PlayerController : MonoBehaviour {
 		if (other.transform.tag == "MovingPlatform")
 			transform.parent = null;
 	}
-	/*public bool Activador (){
-		if (Input.GetButtonDown ("Fire1")) {
-			activa = Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, 2f);
-			if (activa.collider != null && activa.collider.tag == "Palanca") {
-				return true;
-			} else
-				return false;
-		} else
-			return false;
-	}*/
-	/*public void Activador()
-	{
-		if (Input.GetButtonDown ("Fire1")) 
-		{
-			activa = Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, 2f);
-			if (activa.collider != null && activa.collider.tag == "Palanca")
-				activa.collider.GetComponent<Palanca> ().activado = true;
-		}
-	}
-	*/
 	void DibujaActivador()
 	{
 		Gizmos.color = Color.blue;
 		Gizmos.DrawLine(transform.position,transform.position+Vector3.right*transform.localScale.x*2f);
+	}
+	public void PlayerDeath()
+	{
+		if (!isDead) {
+			for (int i = 0; i < mosquito.Length; i++)
+				mosquito [i].GetComponent<MosquitoIA> ().enabled = false;
+			for (int i = 0; i < rata.Length; i++)
+				rata [i].GetComponent<IAenemigo> ().enabled = false;
+			playerAnim.SetBool ("Muerte", true);
+			rb.velocity = Vector2.zero;
+			isDead = true;
+		}
 	}
 }

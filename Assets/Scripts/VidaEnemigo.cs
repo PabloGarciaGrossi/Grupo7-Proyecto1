@@ -47,12 +47,15 @@ public class VidaEnemigo : MonoBehaviour {
 	}
 	public void Reset(){
 		gameObject.SetActive (true);
-		if (gameObject.tag == "Rata")
+		if (gameObject.tag == "Rata") {
+			GetComponent<IAenemigo> ().enabled = true;
 			GetComponent<Rigidbody2D> ().velocity = vel;
-		else if (gameObject.tag == "Oruga")
+		} else if (gameObject.tag == "Oruga")
 			gameObject.GetComponentInChildren<Oruga> ().speed = speed;
-		else if (gameObject.tag == "Mosquito")
+		else if (gameObject.tag == "Mosquito") {
+			GetComponent<MosquitoIA> ().enabled = true;
 			gameObject.GetComponent<MosquitoIA> ().speed = speed;
+		}
 		vidaRestante = maxVida;
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);
 		//gameObject.GetComponentInChildren<FieldOfViewEnemy> ().Detectado = false;

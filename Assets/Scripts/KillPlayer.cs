@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour {
 	// Use this for initialization
+	PlayerController player;
 	void Start () {
+		player = FindObjectOfType<PlayerController> ().GetComponent<PlayerController> ();
 	}
 	
 	// Update is called once per frame
@@ -14,6 +16,6 @@ public class KillPlayer : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.gameObject.CompareTag ("Player"))
-			GameManager.instance.RespawnPlayer ();	
+			player.PlayerDeath ();	
 	}
 }

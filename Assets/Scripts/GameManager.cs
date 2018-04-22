@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
 	public GameObject currentcheckpoint;
 	PlayerController player;
+	Animator playerAnim;
 	VidaEnemigo [] enemigo;
 	FocoLuz luz;
 	Bateria[] pila;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour {
 			// Si ya existe un objeto GameManager, no necesitamos uno nuevo
 			Destroy(this.gameObject);
 		}
+		playerAnim = GameObject.FindWithTag ("Player").GetComponentInChildren<Animator> ();
 		player = FindObjectOfType<PlayerController> ();
 		enemigo = FindObjectsOfType<VidaEnemigo> ();
 		luz = FindObjectOfType<FocoLuz> ();
@@ -40,17 +42,18 @@ public class GameManager : MonoBehaviour {
 	}
 	public void RespawnPlayer()
 	{
-		player.transform.position = currentcheckpoint.transform.position;
-		for (int i = 0; i < enemigo.Length; i++) {
-			enemigo [i].Reset ();
-		}
-		for (int i = 0; i < pila.Length; i++) {
-			pila [i].Reset ();
-		}
-		for (int i = 0; i < box.Length; i++) {
-			box [i].Reset ();
-		}
-		luz.Reset ();
+			player.transform.position = currentcheckpoint.transform.position;
+			playerAnim.SetBool ("Muerte", false);
+			for (int i = 0; i < enemigo.Length; i++) {
+				enemigo [i].Reset ();
+			}
+			for (int i = 0; i < pila.Length; i++) {
+				pila [i].Reset ();
+			}
+			for (int i = 0; i < box.Length; i++) {
+				box [i].Reset ();
+			}
+			luz.Reset ();
 	}
 
 	// A partir de aquí añadiríamos los métodos que necesitemos implementar
