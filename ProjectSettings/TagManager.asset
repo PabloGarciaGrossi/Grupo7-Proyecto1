@@ -12,6 +12,7 @@ TagManager:
   - Enganchado
   - Rata
   - Oruga
+  - Mosquito
   layers:
   - Default
   - TransparentFX

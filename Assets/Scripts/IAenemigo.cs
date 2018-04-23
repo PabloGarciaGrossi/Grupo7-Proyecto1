@@ -12,6 +12,7 @@ public class IAenemigo : MonoBehaviour {
 	Vector2 dir;
 	public Transform cabeza;
 	FieldOfViewEnemy fove;
+	SpriteRenderer sprite;
 	// Use this for initialization
 	void Start () {
 		vel = 2.5f;
