@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50172134453375982}
   - component: {fileID: 61577031154450926}
   m_Layer: 11
-  m_Name: Engranaje
+  m_Name: Engranaje (1)
   m_TagString: Agarrable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

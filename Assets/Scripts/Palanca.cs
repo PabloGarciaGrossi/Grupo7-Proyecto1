@@ -45,13 +45,13 @@ public class Palanca : MonoBehaviour {
 			{
 				if (Input.GetButtonDown ("Fire1") && !activado) 
 				{
-					gameObject.transform.localScale = new Vector3 (-1, 1, 1);
+					gameObject.transform.localScale = new Vector3 (-0.4f, 0.4f, 1);
 					activado = true;
 				} 
 				else if (Input.GetButtonDown ("Fire1") && activado) 
 				{
 					activado = false;
-					gameObject.transform.localScale = new Vector3 (1, 1, 1);
+					gameObject.transform.localScale = new Vector3 (0.4f, 0.4f, 1);
 				}
 			}
 			else
