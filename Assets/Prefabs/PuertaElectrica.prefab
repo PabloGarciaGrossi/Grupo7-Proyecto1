@@ -9,131 +9,112 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1279647245698094}
+  m_RootGameObject: {fileID: 1591381477416236}
   m_IsPrefabParent: 1
---- !u!1 &1279647245698094
+--- !u!1 &1591381477416236
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4391460736139738}
-  - component: {fileID: 114792180756486252}
-  - component: {fileID: 212481252150547324}
-  - component: {fileID: 50975778936973778}
-  - component: {fileID: 61920465137645066}
-  - component: {fileID: 61490910707673340}
-  m_Layer: 8
-  m_Name: Palanca
-  m_TagString: Palanca
+  - component: {fileID: 4205633212723712}
+  - component: {fileID: 212658168519758162}
+  - component: {fileID: 95685362046541638}
+  - component: {fileID: 114040233442256230}
+  - component: {fileID: 114295722259719048}
+  - component: {fileID: 61102460192906592}
+  m_Layer: 0
+  m_Name: PuertaElectrica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4391460736139738
+--- !u!4 &4205633212723712
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279647245698094}
-  m_LocalRotation: {x: 0, y: 0, z: 0.000008726646, w: 1}
-  m_LocalPosition: {x: 8.1, y: -2.95, z: -0.59375}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_GameObject: {fileID: 1591381477416236}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 52.658, y: 15.771, z: 0}
+  m_LocalScale: {x: 0.18072858, y: 1.8296031, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50975778936973778
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279647245698094}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 100000
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &61490910707673340
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!61 &61102460192906592
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279647245698094}
+  m_GameObject: {fileID: 1591381477416236}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.8069992, y: 0.13920818}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.47, y: 2.27}
-    newSize: {x: 4.76, y: 3.19}
+    oldSize: {x: 40.96, y: 1.28}
+    newSize: {x: 40.96, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.47, y: 2.27}
+  m_Size: {x: 25.36074, y: 1.0015836}
   m_EdgeRadius: 0
---- !u!61 &61920465137645066
-BoxCollider2D:
+--- !u!95 &95685362046541638
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279647245698094}
+  m_GameObject: {fileID: 1591381477416236}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.012775898, y: 0.03283882}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.47, y: 2.27}
-    newSize: {x: 4.76, y: 3.19}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.4258814, y: 2.371502}
-  m_EdgeRadius: 0
---- !u!114 &114792180756486252
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 875befd8a3795fd4d837c14de7c93260, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114040233442256230
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279647245698094}
+  m_GameObject: {fileID: 1591381477416236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e4af3071d0dd840818af0722b0acb4, type: 3}
+  m_Script: {fileID: 11500000, guid: 46d5f412aa6f97548b76666fc5677cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activado: 0
-  palanca: 1
-  enzona: 0
---- !u!212 &212481252150547324
+  activador: {fileID: 0}
+--- !u!114 &114295722259719048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1591381477416236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86bf230c6b98e4d81b5009615385e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &212658168519758162
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1279647245698094}
+  m_GameObject: {fileID: 1591381477416236}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -162,12 +143,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 48bbc9ab90f505049a51e0d4a703d4d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44b712b09440b7841a35c2aa7f8421b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.76, y: 3.19}
+  m_Size: {x: 40.96, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
