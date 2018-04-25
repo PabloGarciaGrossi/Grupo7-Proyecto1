@@ -24,11 +24,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _InvFade: 1
-    - _Offset: -15
+    - _Offset: -8
     - _UVXOffset: -0.5
-    - _UVXScale: -15
+    - _UVXScale: -7
     - _UVYOffset: -0.5
-    - _UVYScale: -15
+    - _UVYScale: -7
     m_Colors:
-    - _Color: {r: 0.33088237, g: 0.66774863, b: 1, a: 0.172}
+    - _Color: {r: 1, g: 0.97789043, b: 0.578, a: 0.047}
     - _TintColor: {r: 0.8050233, g: 0.9852941, b: 0.39121974, a: 1}

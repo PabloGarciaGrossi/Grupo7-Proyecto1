@@ -114,10 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d207597e8a0643640ba7479d79ae48ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sporeSpeedHigh: 12
+  sporeSpeedHigh: 9
   sporeSpeedLow: 7
-  sporeAngle: 0
-  rotacion: 45
+  sporeAngle: 12
+  rotacion: 0
 --- !u!212 &212523333443189266
 SpriteRenderer:
   m_ObjectHideFlags: 1
