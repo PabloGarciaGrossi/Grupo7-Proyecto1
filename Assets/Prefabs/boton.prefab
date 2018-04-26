@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114841574358427276}
   m_Layer: 0
   m_Name: boton
-  m_TagString: Untagged
+  m_TagString: Boton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activado: 0
   palanca: 0
+  enzona: 0
 --- !u!212 &212110870439603860
 SpriteRenderer:
   m_ObjectHideFlags: 1

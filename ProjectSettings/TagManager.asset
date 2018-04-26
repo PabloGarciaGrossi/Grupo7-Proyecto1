@@ -13,6 +13,7 @@ TagManager:
   - Rata
   - Oruga
   - Mosquito
+  - Boton
   layers:
   - Default
   - TransparentFX

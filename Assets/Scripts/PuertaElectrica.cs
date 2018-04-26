@@ -12,10 +12,12 @@ public class PuertaElectrica : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (activador.GetComponent<Palanca> ().palanca)
+		if (activador.tag == "Palanca")
 			activado = activador.GetComponent<Palanca> ().activado;
-		else
+		else if (activador.tag == "Boton")
 			activado = activador.GetComponent<Boton> ().activado;
+		else
+			activado = activador.GetComponent<Generador> ().detectado;
 		if (activado) {
 			gameObject.GetComponent<KillPlayer> ().enabled = false;
 			gameObject.GetComponent<SpriteRenderer> ().enabled = false;
