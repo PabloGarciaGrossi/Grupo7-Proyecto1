@@ -11,7 +11,7 @@ public class FocoLuz : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		InvokeRepeating("DisminuyePotencia", 3, 0.7f);
+		InvokeRepeating("DisminuyePotencia", 0.1f, 0.7f);
 	}
 	
 	// Update is called once per frame
@@ -24,12 +24,12 @@ public class FocoLuz : MonoBehaviour {
 		luz2.LightRadius = luz.range;
 	}
 	public void Reset(){
-		if (fov.viewRadius < 5) {
-			fov.viewRadius = 5;
-			luz.range = 5;
+		if (fov.viewRadius < 3.5f) {
+			fov.viewRadius = 3.5f;
+			luz.range = 3.5f;
 		} else {
-			fov.viewRadius = 10;
-			luz.range = 10;
+			fov.viewRadius = 7;
+			luz.range = 7;
 		}
 	}
 }

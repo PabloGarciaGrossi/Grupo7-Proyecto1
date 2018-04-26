@@ -102,6 +102,7 @@ public class PlayerController : MonoBehaviour {
 				mosquito [i].GetComponent<MosquitoIA> ().enabled = false;
 			for (int i = 0; i < rata.Length; i++)
 				rata [i].GetComponent<IAenemigo> ().enabled = false;
+			GetComponent<Agarrar> ().grabbed = false;
 			playerAnim.SetBool ("Muerte", true);
 			rb.velocity = Vector2.zero;
 			isDead = true;

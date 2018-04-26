@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
 	FocoLuz luz;
 	Bateria[] pila;
 	boxpull [] box;
+	Generador[] engranajes;
 
 	// En cuanto el objeto se active
 	void Awake() {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour {
 		luz = FindObjectOfType<FocoLuz> ();
 		pila = FindObjectsOfType<Bateria> ();
 		box = FindObjectsOfType<boxpull> ();
+		engranajes = FindObjectsOfType<Generador> ();
 	}
 	public void RespawnPlayer()
 	{
@@ -53,6 +55,9 @@ public class GameManager : MonoBehaviour {
 			for (int i = 0; i < box.Length; i++) {
 				box [i].Reset ();
 			}
+		for (int i = 0; i < engranajes.Length; i++) {
+			engranajes [i].Reset ();
+		}
 			luz.Reset ();
 	}
 
