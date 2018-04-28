@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	Transform tamaño;
 	MosquitoIA[] mosquito;
 	IAenemigo[] rata;
+	public Canvas pMuerte;
 	// Use this for initialization
 	void Awake () {
 		rb = gameObject.GetComponent<Rigidbody2D> ();
@@ -26,7 +27,8 @@ public class PlayerController : MonoBehaviour {
 	}
     void Start()
     {
-        playerAnim = GetComponentInChildren<Animator>();
+		pMuerte.enabled = false;
+		playerAnim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -45,9 +47,11 @@ public class PlayerController : MonoBehaviour {
 			} else if (move == 0 && enTierra)
 				playerAnim.SetBool ("idle", true);
 		} else {
+			pMuerte.enabled = true;
 			if (Input.GetKey (KeyCode.R)) {
 				isDead = false;
 				GameManager.instance.RespawnPlayer ();
+				pMuerte.enabled = false;
 			}
 		}
     }

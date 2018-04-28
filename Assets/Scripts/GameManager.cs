@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
 	boxpull [] box;
 	Generador[] engranajes;
 
+
 	// En cuanto el objeto se active
 	void Awake() {
 		// Si no hay ningún objeto GameManager ya creado
@@ -52,9 +53,9 @@ public class GameManager : MonoBehaviour {
 			for (int i = 0; i < pila.Length; i++) {
 				pila [i].Reset ();
 			}
-			for (int i = 0; i < box.Length; i++) {
+			/*for (int i = 0; i < box.Length; i++) {
 				box [i].Reset ();
-			}
+			}*/
 		for (int i = 0; i < engranajes.Length; i++) {
 			engranajes [i].Reset ();
 		}
