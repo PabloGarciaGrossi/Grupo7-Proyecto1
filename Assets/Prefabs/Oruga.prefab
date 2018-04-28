@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 7
-  maxVida: 150
+  maxVida: 50
   vidaRestante: 0
 --- !u!212 &212841617710825592
 SpriteRenderer:
