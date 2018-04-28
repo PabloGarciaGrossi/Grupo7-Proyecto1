@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 	MosquitoIA[] mosquito;
 	IAenemigo[] rata;
 	public Canvas pMuerte;
+	float cont = 0,iniSpeed;
 	// Use this for initialization
 	void Awake () {
 		rb = gameObject.GetComponent<Rigidbody2D> ();
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour {
 		tamaño = gameObject.transform;
 		mosquito = FindObjectsOfType<MosquitoIA> ();
 		rata = FindObjectsOfType <IAenemigo> ();
+		iniSpeed = playerSpeed;
 	}
     void Start()
     {
@@ -37,6 +39,17 @@ public class PlayerController : MonoBehaviour {
 			Girar (miraDerecha);
 			DetectaSuelo ();
 			float move = Input.GetAxis ("Horizontal");
+			if (move != 0) {
+				cont += Time.deltaTime;
+			} else
+				cont = 0;
+
+			if (cont > 1f) {
+				playerSpeed = 2 * iniSpeed;
+			} else if (cont > 0)
+				playerSpeed = (1+cont) * iniSpeed;
+			else
+				playerSpeed = iniSpeed;
 			playerAnim.SetFloat ("Speed", Mathf.Abs (move));
 			if (move > 0) {
 				miraDerecha = true;
