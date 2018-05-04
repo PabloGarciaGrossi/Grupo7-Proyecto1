@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 	RaycastHit2D activa;
 	public float playerSpeed;
 	public float playerJump;
-	bool enTierra;
+	public bool enTierra;
 	public bool miraDerecha;
 	public Transform posJugador, posSuelo;
     Animator playerAnim;
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
 				cont = 0;
 
 			if (cont > 1f) {
-				playerSpeed = 2 * iniSpeed;
+				playerSpeed = 1.5f * iniSpeed;
 			} else if (cont > 0)
 				playerSpeed = (1+cont) * iniSpeed;
 			else
@@ -71,12 +71,9 @@ public class PlayerController : MonoBehaviour {
 	void Update()
 	{
 		if (Input.GetButtonDown ("Jump") && enTierra && !isDead) {
-			enTierra = false;
 			rb.AddForce (new Vector2 (0, playerJump), ForceMode2D.Impulse);
 			playerAnim.SetBool ("jump", true);
 			playerAnim.SetBool ("idle", false);
-		} else {
-			enTierra = true;
 		}
 		if (!enTierra)
 			playerAnim.SetBool ("jump", true);

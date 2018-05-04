@@ -5,33 +5,35 @@ public class playerpush : MonoBehaviour {
 
 	public float distance=1f;
 	public LayerMask boxMask;
+	public Transform detectacion;
+	public PlayerController pl;
+	public float cont = 0;
 
 	GameObject box;
 	// Use this for initialization
 	void Start () {
-
+		pl = GetComponent<PlayerController> ();
 	}
 
 	// Update is called once per frame
-	void Update () {
-
+	void Update () { 
 		Physics2D.queriesStartInColliders = false;
-		RaycastHit2D hit= Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, distance, boxMask);
-
+		RaycastHit2D hit= Physics2D.Raycast (detectacion.position, Vector2.right * transform.localScale.x, distance, boxMask);
+		if (!pl.enTierra)
+			cont += Time.deltaTime;
+		else
+			cont = 0;
 		if (hit.collider != null && hit.collider.gameObject.tag == "pushable" && Input.GetKeyDown (KeyCode.E)) {
-
-
 			box = hit.collider.gameObject;
 			box.GetComponent<FixedJoint2D> ().connectedBody = this.GetComponent<Rigidbody2D> ();
 			box.GetComponent<FixedJoint2D> ().enabled = true;
 			box.GetComponent<boxpull> ().beingPushed = true;
-
-		} else if (Input.GetKeyUp (KeyCode.E)) {
+		} else if (Input.GetKeyUp (KeyCode.E) || cont > 1) {
 			box.GetComponent<FixedJoint2D> ().enabled = false;
 			box.GetComponent<boxpull> ().beingPushed = false;
-		}
+			}
 
-	}
+		}
 
 
 	void OnDrawGizmos()

@@ -8,6 +8,7 @@ public class Agarrar : MonoBehaviour {
 	RaycastHit2D hit;
 	public float distance=2f;
 	public Transform holdpoint;
+	public Transform detectacion;
 	public float throwforce;
 	public LayerMask notgrabbed;
 
@@ -17,7 +18,6 @@ public class Agarrar : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		if(Input.GetKeyDown(KeyCode.B))
 		{
 
@@ -25,7 +25,7 @@ public class Agarrar : MonoBehaviour {
 			{
 				Physics2D.queriesStartInColliders=false;
 
-				hit =	Physics2D.Raycast(transform.position,Vector2.right*transform.localScale.x,distance);
+				hit =	Physics2D.Raycast(detectacion.position,Vector2.right*detectacion.localScale.x,distance);
 
 				if(hit.collider!=null && hit.collider.tag=="Agarrable")
 				{
@@ -62,6 +62,6 @@ public class Agarrar : MonoBehaviour {
 	{
 		Gizmos.color = Color.green;
 
-		Gizmos.DrawLine(transform.position,transform.position+Vector3.right*transform.localScale.x*distance);
+		Gizmos.DrawLine(detectacion.position,detectacion.position+Vector3.right*transform.localScale.x*distance);
 	}
 }
