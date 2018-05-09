@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour {
 	void Update()
 	{
 		if (curVidas <= 0)
-			RespawnPlayer();
+			player.PlayerDeath ();
 	}
 	public void Damage()
 	{

@@ -61,7 +61,6 @@ public class PlayerController : MonoBehaviour {
 			} else if (move == 0 && enTierra)
 				playerAnim.SetBool ("idle", true);
 		} else {
-			pMuerte.enabled = true;
 			if (Input.GetKey (KeyCode.R)) {
 				isDead = false;
 				GameManager.instance.RespawnPlayer ();
@@ -118,6 +117,7 @@ public class PlayerController : MonoBehaviour {
 			for (int i = 0; i < rata.Length; i++)
 				rata [i].GetComponent<IAenemigo> ().enabled = false;
 			playerAnim.SetBool ("Muerte", true);
+			pMuerte.enabled = true;
 			rb.velocity = Vector2.zero;
 			isDead = true;
 		}
