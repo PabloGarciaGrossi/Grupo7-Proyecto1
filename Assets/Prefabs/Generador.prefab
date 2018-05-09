@@ -37,6 +37,8 @@ GameObject:
   - component: {fileID: 212603141742844152}
   - component: {fileID: 61149376915481342}
   - component: {fileID: 95736039533788910}
+  - component: {fileID: 114650789282526634}
+  - component: {fileID: 61575826136588026}
   m_Layer: 0
   m_Name: Generador
   m_TagString: Generador
@@ -50,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1979090289285962}
-  m_LocalRotation: {x: 0, y: 0, z: 0.000008726646, w: 1}
-  m_LocalPosition: {x: 23.8671, y: 17.535076, z: -0.265625}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000008726646, w: 1}
+  m_LocalPosition: {x: 18.427969, y: 17.690416, z: -0.15648928}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 4756152000620772}
@@ -83,7 +85,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.124996185, y: -1.1926391}
+  m_Offset: {x: 0.124996185, y: 0.10324192}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -94,7 +96,32 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.8370094, y: 5.387304}
+  m_Size: {x: 7.8370094, y: 7.979066}
+  m_EdgeRadius: 0
+--- !u!61 &61575826136588026
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979090289285962}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.7051044, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.89, y: 8.08}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 11.300207, y: 8.08}
   m_EdgeRadius: 0
 --- !u!95 &95736039533788910
 Animator:
@@ -113,6 +140,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114650789282526634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979090289285962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6e2247e262ef84c9e19b9b0c4d2e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectado: 0
 --- !u!212 &212603141742844152
 SpriteRenderer:
   m_ObjectHideFlags: 1

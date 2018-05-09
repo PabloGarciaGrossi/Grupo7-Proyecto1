@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public float playerJump;
 	public bool enTierra;
 	public bool miraDerecha;
+	public bool grabbed = false;
 	public Transform posJugador, posSuelo;
     Animator playerAnim;
 	Transform tamaño;
@@ -116,7 +117,6 @@ public class PlayerController : MonoBehaviour {
 				mosquito [i].GetComponent<MosquitoIA> ().enabled = false;
 			for (int i = 0; i < rata.Length; i++)
 				rata [i].GetComponent<IAenemigo> ().enabled = false;
-			GetComponent<Agarrar> ().grabbed = false;
 			playerAnim.SetBool ("Muerte", true);
 			rb.velocity = Vector2.zero;
 			isDead = true;

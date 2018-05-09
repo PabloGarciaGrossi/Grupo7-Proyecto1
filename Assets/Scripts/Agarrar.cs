@@ -4,13 +4,15 @@ using System.Collections;
 
 public class Agarrar : MonoBehaviour {
 
-	public bool grabbed;
-	RaycastHit2D hit;
+	bool enzona = false;
+	public Canvas engranaje;
+	public PlayerController pl;
+	/*RaycastHit2D hit;
 	public float distance=2f;
 	public Transform holdpoint;
-	public Transform detectacion;
 	public float throwforce;
 	public LayerMask notgrabbed;
+	bool enzona = false;
 
 	// Use this for initialization
 	void Start () {
@@ -18,19 +20,20 @@ public class Agarrar : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.B))
+		if(Input.GetKeyDown(KeyCode.R))
 		{
 
-			if(!grabbed)
+			if(enzona)
 			{
+				engranaje.enabled = false;
 				Physics2D.queriesStartInColliders=false;
 
-				hit =	Physics2D.Raycast(detectacion.position,Vector2.right*detectacion.localScale.x,distance);
+				hit =	Physics2D.Raycast(transform.position,Vector2.right*transform.localScale.x,distance);
 
 				if(hit.collider!=null && hit.collider.tag=="Agarrable")
 				{
+					Destroy (hit.collider);
 					grabbed=true;
-
 				}
 
 
@@ -53,15 +56,34 @@ public class Agarrar : MonoBehaviour {
 		}
 
 		if (grabbed)
-			hit.collider.gameObject.transform.position = holdpoint.position;
+			engranaje.enabled = true;
 
 
 	}
-
 	void OnDrawGizmos()
 	{
 		Gizmos.color = Color.green;
 
-		Gizmos.DrawLine(detectacion.position,detectacion.position+Vector3.right*transform.localScale.x*distance);
+		Gizmos.DrawLine(transform.position,transform.position+Vector3.right*transform.localScale.x*distance);
+	}*/
+	void Start(){
+		pl = FindObjectOfType<PlayerController> ().GetComponent<PlayerController> ();
+	}
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.R) && enzona) {
+			gameObject.SetActive (false);
+			engranaje.enabled = true;
+			pl.grabbed = true;
+		}
+	}
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "Player")
+			enzona = true;
+	}
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.tag == "Player")
+			enzona = false;
 	}
 }

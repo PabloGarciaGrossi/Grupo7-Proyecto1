@@ -56,9 +56,6 @@ public class GameManager : MonoBehaviour {
 			/*for (int i = 0; i < box.Length; i++) {
 				box [i].Reset ();
 			}*/
-		for (int i = 0; i < engranajes.Length; i++) {
-			engranajes [i].Reset ();
-		}
 			luz.Reset ();
 	}
 
