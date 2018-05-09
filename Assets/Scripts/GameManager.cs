@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour {
 	Bateria[] pila;
 	boxpull [] box;
 	Generador[] engranajes;
+	public int Maxvidas;
+	public int curVidas;
 
 
 	// En cuanto el objeto se active
@@ -42,6 +44,16 @@ public class GameManager : MonoBehaviour {
 		pila = FindObjectsOfType<Bateria> ();
 		box = FindObjectsOfType<boxpull> ();
 		engranajes = FindObjectsOfType<Generador> ();
+		curVidas = Maxvidas;
+	}
+	void Update()
+	{
+		if (curVidas <= 0)
+			RespawnPlayer();
+	}
+	public void Damage()
+	{
+		curVidas -= 1;
 	}
 	public void RespawnPlayer()
 	{
@@ -57,6 +69,7 @@ public class GameManager : MonoBehaviour {
 				box [i].Reset ();
 			}*/
 			luz.Reset ();
+		curVidas = Maxvidas;
 	}
 
 	// A partir de aquí añadiríamos los métodos que necesitemos implementar

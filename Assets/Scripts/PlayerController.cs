@@ -122,4 +122,13 @@ public class PlayerController : MonoBehaviour {
 			isDead = true;
 		}
 	}
+	public IEnumerator Knockback(float KnockDur, float KnockPow, Vector3 KnockbackDir)
+	{
+		float timer = 0;
+		while (KnockDur > timer) {
+			timer += Time.deltaTime;
+			rb.AddForce(new Vector3(KnockbackDir.x*(-250f), KnockbackDir.y * KnockPow, transform.position.z));
+		}
+				yield return 0;
+	}
 }
