@@ -15,7 +15,6 @@
 			// Find and set 2DLight Object //
 			light2d = GameObject.Find("2DLight").GetComponent<DynamicLight2D.DynamicLight>() as DynamicLight2D.DynamicLight;
 			
-			
 			// Add listeners
 			
 			light2d.OnEnterFieldOfView += onEnter;
@@ -23,7 +22,6 @@
 			
 			
 			yield return new WaitForEndOfFrame();
-			StartCoroutine(loop());
 			
 		}
 		
@@ -49,22 +47,19 @@
 		
 		void onExit(GameObject g, DynamicLight2D.DynamicLight light){
 			Debug.Log("OnExit");
-			GetComponent<SpriteRenderer>().color = Color.white;
-			speed = .3f;
+			g.GetComponent<VidaEnemigo> ().enLuz = false;
 		}
 		
 		void onEnter(GameObject g, DynamicLight2D.DynamicLight light){
 			
 			if (gameObject.GetInstanceID () == g.GetInstanceID ()) {
 				Debug.Log("OnEnter");
-				GetComponent<SpriteRenderer>().color = Color.red;
-				speed = 0.08f;	
+				g.GetComponent<VidaEnemigo> ().enLuz = true;
+				}
 			}
 			
 		}
 		
 	}
-
-}
 
 

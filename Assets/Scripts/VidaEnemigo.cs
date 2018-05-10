@@ -6,6 +6,7 @@ public class VidaEnemigo : MonoBehaviour {
 	public float dmg;
 	public float maxVida;
 	public float vidaRestante;
+	public bool enLuz = false;
 	Animator anim;
 	Vector2 vel;
 	float speed;
@@ -25,6 +26,11 @@ public class VidaEnemigo : MonoBehaviour {
 		iniciox = transform.position.x;
 		inicioy = transform.position.y;
 		vidaRestante = maxVida;
+	}
+	void Update()
+	{
+		if (enLuz)
+			Damage ();
 	}
 	public void Damage()
 	{

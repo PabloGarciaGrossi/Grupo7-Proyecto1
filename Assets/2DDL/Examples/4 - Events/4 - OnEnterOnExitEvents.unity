@@ -354,7 +354,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -368,21 +368,21 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 597808269}
-  m_Mesh: {fileID: 1157709782}
+  m_Mesh: {fileID: 809226467}
 --- !u!4 &597808273
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 597808269}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071065, w: -0.7071072}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071065, w: -0.7071071}
   m_LocalPosition: {x: 3.1, y: -9.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1157709782
+--- !u!43 &809226467
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -392,14 +392,14 @@ Mesh:
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 0
+    indexCount: 18
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 0
+    vertexCount: 7
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: -0.0000023841858, y: 8.453436, z: 0}
+      m_Extent: {x: 9.008629, y: 8.453436, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -413,16 +413,28 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 
+  m_IndexBuffer: 000001000200000002000300000003000400000004000500000005000600000006000000
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 0
-    m_VertexCount: 0
+    m_CurrentChannels: 15
+    m_VertexCount: 7
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
     - stream: 0
       offset: 0
       format: 0
@@ -439,20 +451,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 0
-    _typelessdata: 
+    m_DataSize: 336
+    _typelessdata: 0000000000000000000000000000000000000000000080bf000000002868753f0000803f0000803f0000003f0000003f5a2310c146ab6641000000000000000000000000000080bf000000002868753f0000803f0000803f7bbcc93e896b2b3ff31bb1c02c978041000000000000000000000000000080bf000000002868753f0000803f0000803f6ca9de3e1a69303f5874e3bf45418741000000000000000000000000000080bf000000002868753f0000803f0000803fd84bf53e65eb323f1874e33f46418741000000000000000000000000ffff7fbf000000002868753f0000803f0000803f135a053f66eb323fe61bb1402e978041000000000000000000000000000080bf000000002868753f0000803f0000803f49ab103f1a69303f552310414cab6641000000000000000000000000000080bf000000002868753f0000803f0000803fc2211b3f8a6b2b3f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -507,7 +507,7 @@ Mesh:
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 9.008629, y: 8.453436, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
