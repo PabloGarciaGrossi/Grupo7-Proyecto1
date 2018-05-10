@@ -75,8 +75,6 @@ public class PlayerController : MonoBehaviour {
 			playerAnim.SetBool ("jump", true);
 			playerAnim.SetBool ("idle", false);
 		}
-		if (!enTierra)
-			playerAnim.SetBool ("jump", true);
 		else
 			playerAnim.SetBool ("jump", false);
 			
@@ -127,7 +125,7 @@ public class PlayerController : MonoBehaviour {
 		float timer = 0;
 		while (KnockDur > timer) {
 			timer += Time.deltaTime;
-			rb.AddForce(new Vector3(KnockbackDir.x*(-250f), KnockbackDir.y * KnockPow, transform.position.z));
+			rb.AddForce(new Vector3(KnockbackDir.x*(-700f), KnockbackDir.y * KnockPow, transform.position.z));
 		}
 				yield return 0;
 	}

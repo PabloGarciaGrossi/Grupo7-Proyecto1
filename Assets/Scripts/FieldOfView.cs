@@ -85,17 +85,16 @@ public class FieldOfView : MonoBehaviour {
 	public LayerMask obstacleMask;
 	public List<Transform> visibleTargets = new List<Transform>();
 	public bool Detectado;
-
 	void Start(){
-		InvokeRepeating ("FindVisibleTargets", 0f, 0.2f);
+		StartCoroutine ("FindTargetsWithDelay", .2f);
 	}
-	/*IEnumerator FindTargetsWithDelay(float delay){
+	IEnumerator FindTargetsWithDelay(float delay){
 		while (true)
 		{
 			yield return new WaitForSeconds (delay);
 			FindVisibleTargets ();
 		}
-	}*/
+	}
 	//Busca a los objetivos dentro del campo de visión que no estén bloqueados por muros
 	void FindVisibleTargets(){
 		visibleTargets.Clear ();

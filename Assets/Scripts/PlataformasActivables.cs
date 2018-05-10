@@ -24,7 +24,8 @@ public class PlataformasActivables : MonoBehaviour {
 				activado = activador.GetComponent<Palanca> ().activado;
 		else if (activador.tag == "Boton")
 				activado = activador.GetComponent<Boton> ().activado;
-			else activado = activador.GetComponent<Generador>().detectado;
+		else if (activador.tag == "Generador")
+			activado = activador.GetComponent<Generador>().detectado;
 	if (activado) {
 			platform.transform.position = Vector3.MoveTowards (platform.transform.position, currentpoint.position, Time.deltaTime * speed);
 			if (platform.transform.position == currentpoint.position) {
