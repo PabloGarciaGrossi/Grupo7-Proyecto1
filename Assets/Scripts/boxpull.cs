@@ -13,8 +13,13 @@ public class boxpull : MonoBehaviour {
 	public int mode;
 	public int colliding;
 	public float iniciox, inicioy;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    private void Awake()
+    {
+        beingPushed = true;
+    }
+    void Start () {
+        beingPushed = false;
 		xPos = transform.position.x;
 		iniciox = transform.position.x;
 		inicioy = transform.position.y;

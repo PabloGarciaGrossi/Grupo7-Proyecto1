@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour {
 		float timer = 0;
 		while (KnockDur > timer) {
 			timer += Time.deltaTime;
-			rb.AddForce(new Vector3(KnockbackDir.x*(-700f), KnockbackDir.y * KnockPow, transform.position.z));
+			rb.AddForce(new Vector3(KnockbackDir.x*(-400f), KnockbackDir.y * KnockPow, transform.position.z));
 		}
 				yield return 0;
 	}
