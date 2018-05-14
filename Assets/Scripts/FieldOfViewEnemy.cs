@@ -15,13 +15,6 @@ public class FieldOfViewEnemy : MonoBehaviour {
 	void Start(){
 		InvokeRepeating ("FindVisibleTargets", 0f, 0.2f);
 	}
-	/*IEnumerator FindTargetsWithDelay(float delay){
-		while (true)
-		{
-			yield return new WaitForSeconds (delay);
-			FindVisibleTargets ();
-		}
-	}*/
 	//Busca a los objetivos dentro del campo de visión que no estén bloqueados por muros
 	void FindVisibleTargets(){
 		visibleTargets.Clear ();
@@ -45,12 +38,10 @@ public class FieldOfViewEnemy : MonoBehaviour {
 			} else
 				Detectado = false;
 
-
 			dst = Vector3.Distance (transform.position, target.position);
 		}
 
 	}
-
 	public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal){
 		if (!angleIsGlobal) {
 			angleInDegrees -= transform.eulerAngles.z;

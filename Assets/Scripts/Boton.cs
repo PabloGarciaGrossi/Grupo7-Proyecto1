@@ -9,15 +9,13 @@ public class Boton : MonoBehaviour {
 	void Start(){
 		GetComponent<SpriteRenderer> ().sprite = spriteapagado;
 	}
-	void OnTriggerStay2D (Collider2D other)
-	{
+	void OnTriggerStay2D (Collider2D other){
 		if (other.gameObject.tag == "Player" || other.gameObject.tag == "pushable") {
 			activado = true;
 			GetComponent<SpriteRenderer> ().sprite = spriteencendido;
 		}
 	}
-	void OnTriggerExit2D (Collider2D other)
-	{
+	void OnTriggerExit2D (Collider2D other){
 		if (other.gameObject.tag == "Player" || other.gameObject.tag == "pushable") {
 			activado = false;
 			GetComponent<SpriteRenderer> ().sprite = spriteapagado;

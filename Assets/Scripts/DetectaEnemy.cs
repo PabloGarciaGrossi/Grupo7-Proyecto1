@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class DetectaEnemy : MonoBehaviour {
 	public float dmg;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 	void OnTriggerStay2D (Collider2D col){
 		GameObject enemigo = col.gameObject;
 		if (enemigo.CompareTag ("Enemy")) {
 			VidaEnemigo v = enemigo.GetComponent <VidaEnemigo>();
-			v.Damage ();
+			v.Damage (); //Aplica daño llamando al método Damage tras haber 
+						 //detectado al enemigo mediante el CompareTag
 		}
 	}
 }

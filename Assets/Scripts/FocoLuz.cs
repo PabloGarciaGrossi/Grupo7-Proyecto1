@@ -8,15 +8,9 @@ public class FocoLuz : MonoBehaviour {
 	public Light luz;
 	public DynamicLight2D.DynamicLight luz2;
 
-	// Use this for initialization
 	void Start () {
 		
 		InvokeRepeating("DisminuyePotencia", 0.1f, 0.7f);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 	void DisminuyePotencia(){
 		fov.viewRadius = gameObject.GetComponent<Light> ().range;

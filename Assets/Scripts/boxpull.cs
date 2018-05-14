@@ -13,9 +13,7 @@ public class boxpull : MonoBehaviour {
 	public int mode;
 	public int colliding;
 	public float iniciox, inicioy;
-    // Use this for initialization
-    private void Awake()
-    {
+    private void Awake() {
         beingPushed = true;
     }
     void Start () {
@@ -39,14 +37,11 @@ public class boxpull : MonoBehaviour {
 				GetComponent<Rigidbody2D> ().mass=imovableMass;
 			} else {
 				GetComponent<Rigidbody2D> ().mass=defaultMass;
-				//	GetComponent<Rigidbody2D> ().isKinematic = false;
-			}
+				}
 
 		}
 	}
 	public void Reset(){
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);
 	}
-
-
 }

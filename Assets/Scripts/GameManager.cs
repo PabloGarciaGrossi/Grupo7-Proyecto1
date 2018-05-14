@@ -49,30 +49,27 @@ public class GameManager : MonoBehaviour {
 	void Update()
 	{
 		if (curVidas <= 0)
-			player.PlayerDeath ();
+			player.PlayerDeath (); //Llama a PlayerDeath, crea el menú de reaparición
 	}
 	public void Damage()
 	{
+		//pierde una vida
 		curVidas -= 1;
 	}
 	public void RespawnPlayer()
 	{
-			player.transform.position = currentcheckpoint.transform.position;
-			playerAnim.SetBool ("Muerte", false);
-			for (int i = 0; i < enemigo.Length; i++) {
+			
+			player.transform.position = currentcheckpoint.transform.position; //Coloca al Jugador donde se ha guardado 
+		playerAnim.SetBool ("Muerte", false);                           	  //el último checkpoint en la clase Checkpoint
+		for (int i = 0; i < enemigo.Length; i++) {                      	  //Véase especificaciones en el Checkpoint.cs  
 				enemigo [i].Reset ();
 			}
 			for (int i = 0; i < pila.Length; i++) {
 				pila [i].Reset ();
 			}
-			/*for (int i = 0; i < box.Length; i++) {
-				box [i].Reset ();
-			}*/
+			
 			luz.Reset ();
 		curVidas = Maxvidas;
 	}
-
-	// A partir de aquí añadiríamos los métodos que necesitemos implementar
-	// para conseguir las funcionalidades que pretendamos incluir. 
 }
 

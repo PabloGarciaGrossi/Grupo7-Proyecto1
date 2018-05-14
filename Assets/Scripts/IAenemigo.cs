@@ -13,7 +13,7 @@ public class IAenemigo : MonoBehaviour {
 	public Transform cabeza;
 	FieldOfViewEnemy fove;
 	SpriteRenderer sprite;
-	// Use this for initialization
+
 	void Start () {
 		vel = 2.5f;
 		rb = GetComponent <Rigidbody2D> ();
@@ -21,20 +21,11 @@ public class IAenemigo : MonoBehaviour {
 		probabilidadF = probabilidad;
 		fove = GetComponentInChildren <FieldOfViewEnemy> ();
 	}
-
-	// Update is called once per frame
+		
 	void FixedUpdate () {
 		detectado = fove.Detectado;
-		//Vector2 v2 = new Vector2 (cabeza.position.x, cabeza.position.y);
 		rb.velocity = new Vector2 (vel, 0f);
-		//Debug.Log ("agua");
-		//RaycastHit2D hit = Physics2D.Raycast (v2,dir,1000);
-		/*if (hit.collider != null && hit.collider.gameObject.tag == "Player")
-			detectado = true;
-		if (hit.collider == null) {
-			Debug.Log ("agua");
-		}
-*/
+
 		if (detectado) {
 			probabilidadF = 0f;
 			if (transform.localScale.x > 0)
@@ -58,9 +49,7 @@ public class IAenemigo : MonoBehaviour {
 		if (probabilidadF > Random.value) {
 			Gira ();
 		}
-
 	}
-
 	void Gira (){
 		izq = !izq;
 		float sx = this.gameObject.transform.localScale.x;
@@ -70,6 +59,4 @@ public class IAenemigo : MonoBehaviour {
 		vel *= -1;
 		dir = new Vector2 (-dir.x, dir.y);
 	}
-
-
 }

@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour {
 	public Sprite[] imvidas;
 	public Image vidasUI;
-	// Use this for initialization
+
 	void Start () {
+		//Muestra el HUD de las vidas
 		vidasUI = GetComponentInChildren<Image> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
+		//Actualiza las vidas
 		vidasUI.sprite = imvidas [GameManager.instance.curVidas];
 	}
 }

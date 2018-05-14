@@ -4,8 +4,8 @@ using UnityEngine;
 namespace UnityStandardAssets._2D
 {
     public class Camera2DFollow : MonoBehaviour
-    {
-        public Transform target;
+	{
+		public Transform target;
         public float damping = 1;
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
@@ -16,29 +16,22 @@ namespace UnityStandardAssets._2D
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
-        // Use this for initialization
-        private void Start()
-        {
+          private void Start(){
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
         }
 
-
-        // Update is called once per frame
-        private void Update()
-        {
-            // only update lookahead pos if accelerating or changed direction
+		  private void Update(){
+			//el update (updateLookAheadTarge) solo comprueba pos si está acelerando o cambiando de dirección
             float xMoveDelta = (target.position - m_LastTargetPosition).x;
 
             bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
 
-            if (updateLookAheadTarget)
-            {
+            if (updateLookAheadTarget) {
                 m_LookAheadPos = lookAheadFactor*Vector3.right*Mathf.Sign(xMoveDelta);
             }
-            else
-            {
+            else{
                 m_LookAheadPos = Vector3.MoveTowards(m_LookAheadPos, Vector3.zero, Time.deltaTime*lookAheadReturnSpeed);
             }
 

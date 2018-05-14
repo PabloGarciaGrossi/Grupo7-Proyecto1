@@ -9,14 +9,13 @@ public class MovimientoJugador : MonoBehaviour {
 	Rigidbody2D rb;
 	RaycastHit2D activa;
 	Transform tamaño;
-	// Use this for initialization
+
 	void Start () {
 		anim = GetComponent<Animator> ();
 		rb = GetComponent<Rigidbody2D> ();
 		tamaño = gameObject.transform;
 	}
-	
-	// Update is called once per frame
+
 	void fixedUpdate () {
 		float move = Input.GetAxis ("Horizontal");
 		rb.velocity = new Vector2 (move * topspeed, rb.velocity.y);
@@ -45,7 +44,7 @@ public class MovimientoJugador : MonoBehaviour {
 			transform.parent = null;
 	}
 	public bool Activador (){
-		if (Input.GetKey (KeyCode.B)) {
+		if (Input.GetKey (KeyCode.P)) {
 			activa = Physics2D.Raycast (transform.position, Vector2.right * transform.localScale.x, 2f);
 			if (activa.collider != null && activa.collider.tag == "Palanca") {
 				return true;

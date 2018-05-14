@@ -10,14 +10,13 @@ public class MosquitoIA : MonoBehaviour {
 	bool playerInRange;
 	float dirX,dirY;
 	Rigidbody2D rb;
-	// Use this for initialization
+
 	void Start () {
 		player = FindObjectOfType<PlayerController> ();
 		InvokeRepeating ("cambiaDir", 0f, 0.2f);
 		rb = GetComponent<Rigidbody2D> ();
 	}
-
-	// Update is called once per frame
+		
 	void Update () {
 		playerInRange = Physics2D.OverlapCircle (transform.position, playerRange, playerlayer);
 		if (playerInRange) {

@@ -8,13 +8,12 @@ public class Oruga : MonoBehaviour {
 	public float speed;
 	Transform limiteactual;
 
-	// Use this for initialization
 	void Start () {
 		limiteactual = limites [pointselection];
 	}
-	
-	// Update is called once per frame
+
 	void Update () {	
+		//Movimiento de la Oruga respecto a las paredes
 		gameObject.transform.position = Vector3.MoveTowards (gameObject.transform.position, limiteactual.position, Time.deltaTime * speed);
 		if (gameObject.transform.position == limiteactual.position) {
 			pointselection++;

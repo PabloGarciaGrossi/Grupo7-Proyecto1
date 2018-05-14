@@ -7,13 +7,12 @@ public class CamaleonIA : MonoBehaviour {
 	FieldOfViewEnemy fove;
 	float dis;
 	public float minTras, maxTras;
-	// Use this for initialization
+
 	void Start () {
 		sr = GetComponentInChildren<SpriteRenderer> ();
 		fove = GetComponent<FieldOfViewEnemy> ();
 	}
 
-	// Update is called once per frame
 	void Update () {
 		dis = getDistance ();
 		Color col = sr.color;
