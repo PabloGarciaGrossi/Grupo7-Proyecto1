@@ -32,15 +32,18 @@ public class FieldOfView : MonoBehaviour {
 			Vector3 dirToTarget = (target.position - transform.position).normalized;
 			//Si el objetivo está en el ángulo de visión, hallado con los vectores directores de la dirección hacia la que mira
 			//el jugador y el vector que indica la dirección que hay del objetivo al jugador.
-			if (Vector3.Angle (transform.up, dirToTarget) < viewAngle / 2) {
+			if (Vector3.Angle (transform.up, dirToTarget) < viewAngle / 1.25f) {
 				//Hallamos la distancia entre ambos
 				float dstToTarget = Vector3.Distance(transform.position, target.position);
 				//Si no hay ningún obstáculo en medio, añade el objetivo a la lista de objetivos visibles
 				if (!Physics2D.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)) {
 					visibleTargets.Add (target);
-					target.gameObject.GetComponent<VidaEnemigo> ().Damage ();
 				}
 			}
+		}
+		foreach(Transform trans in visibleTargets)
+		{
+			trans.gameObject.GetComponent<VidaEnemigo> ().Damage ();
 		}
 	}
 

@@ -9,7 +9,6 @@ public class FocoLuz : MonoBehaviour {
 	public DynamicLight2D.DynamicLight luz2;
 
 	void Start () {
-		
 		InvokeRepeating("DisminuyePotencia", 0.1f, 0.7f);
 	}
 	void DisminuyePotencia(){

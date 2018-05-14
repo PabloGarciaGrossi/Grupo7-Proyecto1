@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bateria : MonoBehaviour {
 	public Light luz;
 	public FieldOfView fov;
+
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.CompareTag ("Player")) {
 			luz.range = 10;
