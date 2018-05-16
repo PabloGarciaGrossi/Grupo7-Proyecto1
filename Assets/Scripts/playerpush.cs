@@ -23,12 +23,12 @@ public class playerpush : MonoBehaviour {
 			cont += Time.deltaTime;
 		else
 			cont = 0;
-		if (hit.collider != null && hit.collider.gameObject.tag == "pushable" && Input.GetKeyDown (KeyCode.E)) {
+		if (hit.collider != null && hit.collider.gameObject.tag == "pushable" && Input.GetKeyDown (KeyCode.P)) {
 			box = hit.collider.gameObject;
 			box.GetComponent<FixedJoint2D> ().connectedBody = this.GetComponent<Rigidbody2D> ();
 			box.GetComponent<FixedJoint2D> ().enabled = true;
 			box.GetComponent<boxpull> ().beingPushed = true;
-		} else if (Input.GetKeyUp (KeyCode.E) || cont > 1) {
+		} else if (Input.GetKeyUp (KeyCode.P) || cont > 1) {
 			box.GetComponent<FixedJoint2D> ().enabled = false;
 			box.GetComponent<boxpull> ().beingPushed = false;
 			}
