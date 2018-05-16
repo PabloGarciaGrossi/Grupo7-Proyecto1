@@ -7,7 +7,7 @@ public class VidaEnemigo : MonoBehaviour {
 	public float maxVida;
 	public float vidaRestante;
 	public bool enLuz = false;
-	public AudioSource hurtMonster;
+	//public AudioSource hurtMonster;
 	Animator anim;
 	Vector2 vel;
 	float speed;
@@ -46,7 +46,7 @@ public class VidaEnemigo : MonoBehaviour {
 				anim.SetBool ("Muerte", true);
 			} else if (gameObject.tag == "Mosquito") {
 				gameObject.GetComponent<MosquitoIA> ().speed = 0;
-				hurtMonster.Play();
+				//hurtMonster.Play();
 			}
 			Invoke ("Destruir", 1f);
 		}
