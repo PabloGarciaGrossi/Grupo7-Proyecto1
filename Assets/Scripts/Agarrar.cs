@@ -11,7 +11,7 @@ public class Agarrar : MonoBehaviour {
 		pl = FindObjectOfType<PlayerController> ().GetComponent<PlayerController> ();
 	}
 	void Update(){
-		if (Input.GetKeyDown (KeyCode.R) && enzona) {
+		if (Input.GetKeyDown (KeyCode.O) && enzona) {
 			gameObject.SetActive (false);
 			engranaje.enabled = true;
 			pl.grabbed = true;
