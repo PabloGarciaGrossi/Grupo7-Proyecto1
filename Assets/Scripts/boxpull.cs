@@ -7,6 +7,7 @@ public class boxpull : MonoBehaviour {
 	public float imovableMass;
 	public bool beingPushed;
 	float xPos;
+	Transform tamaño;
 
 	public Vector3 lastPos;
 
@@ -40,6 +41,18 @@ public class boxpull : MonoBehaviour {
 				}
 
 		}
+	}
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.transform.tag == "MovingPlatform") {
+			transform.parent = other.transform;
+			gameObject.transform.localScale = tamaño.localScale;
+		}
+	}
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.transform.tag == "MovingPlatform")
+			transform.parent = null;
 	}
 	public void Reset(){
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);

@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 	public bool grabbed = false;
 	public Transform posJugador, posSuelo;
     Animator playerAnim;
+	bool particles = false;
 	Transform tamaño;
 	MosquitoIA[] mosquito;
 	IAenemigo[] rata;
@@ -65,6 +66,9 @@ public class PlayerController : MonoBehaviour {
 				isDead = false;
 				GameManager.instance.RespawnPlayer ();
 				pMuerte.enabled = false;
+			}
+			if (particles) {
+				gameObject.transform.GetChild (5).gameObject.SetActive (true);
 			}
 		}
     }
@@ -125,7 +129,8 @@ public class PlayerController : MonoBehaviour {
 		float timer = 0;
 		while (KnockDur > timer) {
 			timer += Time.deltaTime;
-			rb.AddForce(new Vector3(KnockbackDir.x*(-400f), KnockbackDir.y * KnockPow, transform.position.z));
+			rb.AddForce(new Vector3(KnockbackDir.x*(-10f), KnockbackDir.y * KnockPow, transform.position.z));
+			particles = true;
 		}
 				yield return 0;
 	}
