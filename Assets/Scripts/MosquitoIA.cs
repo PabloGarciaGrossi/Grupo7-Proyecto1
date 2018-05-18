@@ -26,7 +26,7 @@ public class MosquitoIA : MonoBehaviour {
 			else
 				transform.localScale = new Vector3 (2f, 2f, 1f);
 		} else {
-			rb.velocity = new Vector2 (dirX * speed, dirY * speed);
+			rb.velocity = new Vector2 (dirX * 0.5f, dirY * 0.5f);
 		}
 	}
 	void OnDrawGizmosSelected(){

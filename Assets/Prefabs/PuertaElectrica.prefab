@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212658168519758162}
   - component: {fileID: 95685362046541638}
   - component: {fileID: 114040233442256230}
-  - component: {fileID: 114295722259719048}
   - component: {fileID: 61102460192906592}
   m_Layer: 0
   m_Name: PuertaElectrica
@@ -37,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1591381477416236}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 52.658, y: 15.771, z: 0}
-  m_LocalScale: {x: 0.18072858, y: 1.8296031, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.000008726646, w: 1}
+  m_LocalPosition: {x: 72.2, y: 10.33, z: 0.10913572}
+  m_LocalScale: {x: 0.16615884, y: 0.94706535, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61102460192906592
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -56,7 +55,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8069992, y: 0.13920818}
+  m_Offset: {x: -0.8069992, y: 0.1114431}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -67,7 +66,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.36074, y: 1.0015836}
+  m_Size: {x: 25.36074, y: 0.3907801}
   m_EdgeRadius: 0
 --- !u!95 &95685362046541638
 Animator:
@@ -98,17 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activador: {fileID: 0}
---- !u!114 &114295722259719048
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1591381477416236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e86bf230c6b98e4d81b5009615385e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212658168519758162
 SpriteRenderer:
   m_ObjectHideFlags: 1

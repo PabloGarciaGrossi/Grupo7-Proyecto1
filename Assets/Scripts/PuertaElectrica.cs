@@ -19,13 +19,16 @@ public class PuertaElectrica : MonoBehaviour {
 		else
 			activado = activador.GetComponent<Generador> ().detectado;
 		if (activado) {
-			gameObject.GetComponent<KillPlayer> ().enabled = false;
 			gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 			gameObject.GetComponent<BoxCollider2D> ().enabled = false;
 		} else {
-			gameObject.GetComponent<KillPlayer> ().enabled = true;
 			gameObject.GetComponent<SpriteRenderer> ().enabled = true;
 			gameObject.GetComponent<BoxCollider2D> ().enabled = true;
 		}
+	}
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.gameObject.tag == "Player")
+			other.gameObject.GetComponent<PlayerController> ().PlayerDeath ();
 	}
 }
