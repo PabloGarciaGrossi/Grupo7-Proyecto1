@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
 	Transform tamaño;
 	MosquitoIA[] mosquito;
 	IAenemigo[] rata;
+	BossFinal boss;
 	public Canvas pMuerte;
 	float cont = 0,iniSpeed;
 	// Use this for initialization
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 		mosquito = FindObjectsOfType<MosquitoIA> ();
 		rata = FindObjectsOfType <IAenemigo> ();
 		iniSpeed = playerSpeed;
+		boss = FindObjectOfType<BossFinal> ();
 	}
     void Start()
     {
@@ -66,9 +68,6 @@ public class PlayerController : MonoBehaviour {
 				isDead = false;
 				GameManager.instance.RespawnPlayer ();
 				pMuerte.enabled = false;
-			}
-			if (particles) {
-				gameObject.transform.GetChild (5).gameObject.SetActive (true);
 			}
 		}
     }
@@ -118,6 +117,7 @@ public class PlayerController : MonoBehaviour {
 				mosquito [i].GetComponent<MosquitoIA> ().enabled = false;
 			for (int i = 0; i < rata.Length; i++)
 				rata [i].GetComponent<IAenemigo> ().enabled = false;
+			boss.GetComponent<BossFinal> ().enabled = false;
 			playerAnim.SetBool ("Muerte", true);
 			pMuerte.enabled = true;
 			rb.velocity = Vector2.zero;

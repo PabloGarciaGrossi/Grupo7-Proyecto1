@@ -20,7 +20,7 @@ public class VidaEnemigo : MonoBehaviour {
 		} else if (gameObject.tag == "Oruga") {
 			speed = GetComponentInChildren<Oruga> ().speed;
 			anim = GetComponent<Animator> ();
-		} else if (gameObject.tag == "Mosquito") {
+		} else if (gameObject.tag == "Mosquito" || gameObject.tag == "MosquitoFinal") {
 			gameObject.transform.GetChild (0).gameObject.SetActive (false);
 			speed = GetComponent<MosquitoIA> ().speed;
 		}
@@ -63,7 +63,8 @@ public class VidaEnemigo : MonoBehaviour {
 		else if (gameObject.tag == "Mosquito") {
 			GetComponent<MosquitoIA> ().enabled = true;
 			gameObject.GetComponent<MosquitoIA> ().speed = speed;
-		}
+		} else if (gameObject.tag == "MosquitoFinal")
+			Destroy (gameObject);
 		vidaRestante = maxVida;
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);
 		//gameObject.GetComponentInChildren<FieldOfViewEnemy> ().Detectado = false;

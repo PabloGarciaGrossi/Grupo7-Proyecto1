@@ -41,6 +41,7 @@ public class FieldOfView : MonoBehaviour {
 				}
 			}
 		}
+		//Para cada enemigo dentro del rango de visión, le hace daño.
 		foreach(Transform trans in visibleTargets)
 		{
 			trans.gameObject.GetComponent<VidaEnemigo> ().Damage ();

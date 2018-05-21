@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
 	PlayerController player;
 	Animator playerAnim;
 	VidaEnemigo [] enemigo;
+	BossFinal boss;
 	FocoLuz luz;
 	Bateria[] pila;
 	boxpull [] box;
@@ -39,15 +40,16 @@ public class GameManager : MonoBehaviour {
 		}
 		playerAnim = GameObject.FindWithTag ("Player").GetComponentInChildren<Animator> ();
 		player = FindObjectOfType<PlayerController> ();
-		enemigo = FindObjectsOfType<VidaEnemigo> ();
 		luz = FindObjectOfType<FocoLuz> ();
 		pila = FindObjectsOfType<Bateria> ();
 		box = FindObjectsOfType<boxpull> ();
 		engranajes = FindObjectsOfType<Generador> ();
 		curVidas = Maxvidas;
+		boss = FindObjectOfType<BossFinal> ();
 	}
 	void Update()
 	{
+		enemigo = FindObjectsOfType<VidaEnemigo> ();
 		if (curVidas <= 0)
 			player.PlayerDeath (); //Llama a PlayerDeath, crea el menú de reaparición
 	}
@@ -61,14 +63,14 @@ public class GameManager : MonoBehaviour {
 			
 			player.transform.position = currentcheckpoint.transform.position; //Coloca al Jugador donde se ha guardado 
 		playerAnim.SetBool ("Muerte", false);                           	  //el último checkpoint en la clase Checkpoint
-		for (int i = 0; i < enemigo.Length; i++) {                      	  //Véase especificaciones en el Checkpoint.cs  
+		for (int i = 0; i < enemigo.Length; i++) {//Véase especificaciones en el Checkpoint.cs 
 				enemigo [i].Reset ();
 			}
 			for (int i = 0; i < pila.Length; i++) {
 				pila [i].Reset ();
 			}
-			
-			luz.Reset ();
+		boss.GetComponent<BossFinal> ().enabled = true;
+		luz.Reset ();
 		curVidas = Maxvidas;
 	}
 }

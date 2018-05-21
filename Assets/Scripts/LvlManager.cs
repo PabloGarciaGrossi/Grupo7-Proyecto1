@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LvlManager : MonoBehaviour {
 	
 	public void CargaNivel (string nombre){
-		SceneManager.LoadScene (nombre);
+		SceneManager.LoadScene ("Nivel2");
 	}
 
 	public void Salir(){

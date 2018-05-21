@@ -8,10 +8,10 @@ public class BossFinal : MonoBehaviour {
 	public Transform spawner2;
 	public GameObject palanca1;
 	public GameObject palanca2;
-	bool detectado= false;
+	public bool detectado= false;
 
 	void Start(){
-		InvokeRepeating ("PruebaSpawner", 0.1f, 4f);
+		InvokeRepeating ("PruebaSpawner", 3f, 7f);
 	}
 	void Update () {
 		if (palanca1.GetComponent<Palanca> ().activado && palanca2.GetComponent<Palanca> ().activado)
