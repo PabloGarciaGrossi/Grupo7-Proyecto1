@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour {
 				rb.velocity = new Vector2 (-playerSpeed, rb.velocity.y);
 			} else if (move == 0 && enTierra)
 				playerAnim.SetBool ("idle", true);
-		} else {
+		}else {
 			if (Input.GetKey (KeyCode.R)) {
 				isDead = false;
 				GameManager.instance.RespawnPlayer ();

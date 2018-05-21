@@ -11,6 +11,7 @@ public class KillPlayer : MonoBehaviour {
 	{
 		if (col.gameObject.CompareTag ("Player")) {
 			GameManager.instance.Damage ();
+			GameManager.instance.ControladorVida ();
 			StartCoroutine(pl.Knockback(0.02f, 400f, pl.transform.position));
 		}
 	}

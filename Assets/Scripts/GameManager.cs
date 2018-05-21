@@ -47,9 +47,8 @@ public class GameManager : MonoBehaviour {
 		curVidas = Maxvidas;
 		boss = FindObjectOfType<BossFinal> ();
 	}
-	void Update()
+	public void ControladorVida()
 	{
-		enemigo = FindObjectsOfType<VidaEnemigo> ();
 		if (curVidas <= 0)
 			player.PlayerDeath (); //Llama a PlayerDeath, crea el menú de reaparición
 	}
@@ -60,8 +59,8 @@ public class GameManager : MonoBehaviour {
 	}
 	public void RespawnPlayer()
 	{
-			
-			player.transform.position = currentcheckpoint.transform.position; //Coloca al Jugador donde se ha guardado 
+		enemigo = FindObjectsOfType<VidaEnemigo> ();
+		player.transform.position = currentcheckpoint.transform.position; //Coloca al Jugador donde se ha guardado 
 		playerAnim.SetBool ("Muerte", false);                           	  //el último checkpoint en la clase Checkpoint
 		for (int i = 0; i < enemigo.Length; i++) {//Véase especificaciones en el Checkpoint.cs 
 				enemigo [i].Reset ();

@@ -28,11 +28,6 @@ public class VidaEnemigo : MonoBehaviour {
 		inicioy = transform.position.y;
 		vidaRestante = maxVida;
 	}
-	void Update()
-	{
-		if (enLuz)
-			Damage ();
-	}
 	public void Damage()
 	{
 		if (gameObject.tag != "Oruga")
