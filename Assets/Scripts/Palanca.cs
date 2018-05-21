@@ -6,38 +6,7 @@ public class Palanca : MonoBehaviour {
 	public bool activado = false;
 	public bool palanca;
 	public bool enzona = false;
-	/*void Update (){
-		if (palanca) 
-		{
-			if (activado)
-				gameObject.transform.localScale = new Vector3 (1, 1, 1);
-			else
-				gameObject.transform.localScale = new Vector3 (-1, 1, 1);
-		}
-		else
-			GetComponent<Boton> ().enabled = true;
-		}*/
-	/*void OnTriggerStay2D(Collider2D other)
-	{
-		if (other.tag == "Player") 
-		{
-			if (palanca) 
-			{
-				if (Input.GetButtonDown ("Fire1") && !activado) 
-				{
-					gameObject.transform.localScale = new Vector3 (-1, 1, 1);
-					activado = true;
-				} 
-				else if (Input.GetButtonDown ("Fire1") && activado) 
-				{
-					activado = false;
-					gameObject.transform.localScale = new Vector3 (1, 1, 1);
-				}
-			}
-			else
-				GetComponent<Boton> ().enabled = true;
-		}
-	}*/
+	public AudioSource palancaSound;
 	void Update(){
 		if (enzona) 
 		{
@@ -47,11 +16,13 @@ public class Palanca : MonoBehaviour {
 				{
 					gameObject.transform.localScale = new Vector3 (-0.4f, 0.4f, 1);
 					activado = true;
+					palancaSound.Play ();
 				} 
 				else if (Input.GetButtonDown ("Fire1") && activado) 
 				{
 					activado = false;
 					gameObject.transform.localScale = new Vector3 (0.4f, 0.4f, 1);
+					palancaSound.Play ();
 				}
 			}
 			else
