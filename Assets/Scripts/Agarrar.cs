@@ -7,6 +7,7 @@ public class Agarrar : MonoBehaviour {
 	bool enzona = false;
 	public Canvas engranaje;
 	public PlayerController pl;
+	public AudioSource pillaEngranaje;
 	void Start(){
 		pl = FindObjectOfType<PlayerController> ().GetComponent<PlayerController> ();
 	}
@@ -15,6 +16,8 @@ public class Agarrar : MonoBehaviour {
 			gameObject.SetActive (false);
 			engranaje.enabled = true;
 			pl.grabbed = true;
+			pillaEngranaje.Play ();
+
 		}
 	}
 	void OnTriggerEnter2D(Collider2D other)

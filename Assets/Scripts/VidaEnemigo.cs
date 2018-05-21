@@ -7,7 +7,7 @@ public class VidaEnemigo : MonoBehaviour {
 	public float maxVida;
 	public float vidaRestante;
 	public bool enLuz = false;
-	//public AudioSource hurtMonster;
+	public AudioSource hurtMonster;
 	Animator anim;
 	Vector2 vel;
 	float speed;
@@ -33,17 +33,20 @@ public class VidaEnemigo : MonoBehaviour {
 		if (gameObject.tag != "Oruga")
 		gameObject.transform.GetChild (0).gameObject.SetActive (true);
 		vidaRestante -= dmg;
+		hurtMonster.Play();
 		if (vidaRestante <= 0) {
 			if (gameObject.tag == "Rata") {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 			}else if (gameObject.tag == "Oruga") {
 				gameObject.GetComponentInChildren<Oruga> ().speed = 0;
 				anim.SetBool ("Muerte", true);
+
 			} else if (gameObject.tag == "Mosquito") {
 				gameObject.GetComponent<MosquitoIA> ().speed = 0;
-				//hurtMonster.Play();
+
 			}
 			Invoke ("Destruir", 1f);
+			hurtMonster.Play();
 		}
 		if (gameObject.tag != "Oruga")
 		Invoke ("DesactivaParticulas", 1);
