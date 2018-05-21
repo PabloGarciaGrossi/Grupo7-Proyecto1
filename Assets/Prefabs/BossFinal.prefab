@@ -51,9 +51,9 @@ GameObject:
   - component: {fileID: 4165861210697472}
   - component: {fileID: 212460347552961132}
   - component: {fileID: 95414925631898456}
-  - component: {fileID: 114967172195015458}
   - component: {fileID: 60112850169171976}
   - component: {fileID: 58855477332846982}
+  - component: {fileID: 114836322172076176}
   m_Layer: 0
   m_Name: BossFinal
   m_TagString: Untagged
@@ -68,8 +68,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1808969125303864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.9, y: 15.11, z: -0.16759789}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -42.18619, y: -55.3, z: -0.16759789}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4816115603718886}
   - {fileID: 4557409528501034}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756359856506888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.98, y: -1.28, z: 0}
+  m_LocalPosition: {x: 1.82, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4165861210697472}
@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1443809611722856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.84, y: -1.53, z: 0}
+  m_LocalPosition: {x: -2.57, y: -1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4165861210697472}
@@ -501,7 +501,7 @@ Animator:
   m_GameObject: {fileID: 1808969125303864}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fc980ad337361fa46af9f9ad627f9e45, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1191cbb49bef51a4884d49d664cafc7c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -509,7 +509,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114967172195015458
+--- !u!114 &114836322172076176
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -517,14 +517,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808969125303864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57ab3407b0ef54948a0c364caa17754d, type: 3}
+  m_Script: {fileID: 11500000, guid: d6f40a2cc3839bb4aacc019b9806a6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 0}
+  enemigo: {fileID: 1152198607811204, guid: 8d6830665aaf97c4cb75176290610b3b, type: 2}
   spawner1: {fileID: 4816115603718886}
   spawner2: {fileID: 4557409528501034}
   palanca1: {fileID: 0}
   palanca2: {fileID: 0}
+  detectado: 0
 --- !u!212 &212460347552961132
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -558,7 +559,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: 33dd59563339e854aa0a13a219cc43c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

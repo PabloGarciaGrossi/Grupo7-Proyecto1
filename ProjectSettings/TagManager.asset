@@ -14,6 +14,7 @@ TagManager:
   - Oruga
   - Mosquito
   - Boton
+  - MosquitoFinal
   layers:
   - Default
   - TransparentFX
