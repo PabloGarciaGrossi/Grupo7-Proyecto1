@@ -47,14 +47,12 @@
 		
 		void onExit(GameObject g, DynamicLight2D.DynamicLight light){
 			Debug.Log("OnExit");
-			g.GetComponent<VidaEnemigo> ().enLuz = false;
 		}
 		
 		void onEnter(GameObject g, DynamicLight2D.DynamicLight light){
 			
 			if (gameObject.GetInstanceID () == g.GetInstanceID ()) {
 				Debug.Log("OnEnter");
-				g.GetComponent<VidaEnemigo> ().enLuz = true;
 				}
 			}
 			

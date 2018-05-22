@@ -68,7 +68,8 @@ public class GameManager : MonoBehaviour {
 			for (int i = 0; i < pila.Length; i++) {
 				pila [i].Reset ();
 			}
-		boss.GetComponent<BossFinal> ().enabled = true;
+		if (boss != null)
+			boss.GetComponent<BossFinal> ().enabled = true;
 		luz.Reset ();
 		curVidas = Maxvidas;
 	}

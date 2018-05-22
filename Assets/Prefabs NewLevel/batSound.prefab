@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4448129572621700}
   - component: {fileID: 82673511908975590}
   m_Layer: 0
-  m_Name: botonSound
+  m_Name: batSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
