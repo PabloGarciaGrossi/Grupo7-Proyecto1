@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 42da4c84c3e1f7f469720b4cb5dacaa1
-timeCreated: 1523203202
+timeCreated: 1526999051
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -145,13 +145,13 @@ TextureImporter:
       name: camaleon_andando_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 896
-        width: 256
-        height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 31
+        y: 893
+        width: 227
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -159,12 +159,12 @@ TextureImporter:
       name: camaleon_andando_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 540
         y: 896
-        width: 256
+        width: 220
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: camaleon_andando_2
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1051
         y: 896
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: camaleon_andando_3
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1561
         y: 896
-        width: 256
+        width: 227
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: camaleon_andando_4
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2074
         y: 896
-        width: 256
+        width: 224
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: camaleon_andando_5
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2584
         y: 896
-        width: 256
+        width: 228
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: camaleon_andando_6
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3100
         y: 896
-        width: 256
+        width: 222
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: camaleon_andando_7
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3612
         y: 896
-        width: 256
+        width: 222
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: camaleon_andando_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 30
         y: 768
-        width: 256
+        width: 226
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: camaleon_andando_9
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
+        x: 540
+        y: 766
+        width: 220
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,12 +285,12 @@ TextureImporter:
       name: camaleon_andando_10
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1055
         y: 768
-        width: 256
+        width: 219
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: camaleon_andando_11
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1565
         y: 768
-        width: 256
+        width: 223
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: camaleon_andando_12
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2078
         y: 768
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: camaleon_andando_13
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2589
         y: 768
-        width: 256
+        width: 222
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: camaleon_andando_14
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3104
         y: 768
-        width: 256
+        width: 218
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,12 +355,12 @@ TextureImporter:
       name: camaleon_andando_15
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3617
         y: 768
-        width: 256
+        width: 215
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -369,12 +369,12 @@ TextureImporter:
       name: camaleon_andando_16
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 640
-        width: 256
+        width: 224
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: camaleon_andando_17
       rect:
         serializedVersion: 2
-        x: 512
+        x: 546
         y: 640
-        width: 256
+        width: 216
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,12 +397,12 @@ TextureImporter:
       name: camaleon_andando_18
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1059
         y: 640
-        width: 256
+        width: 213
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -411,12 +411,12 @@ TextureImporter:
       name: camaleon_andando_19
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1570
         y: 640
-        width: 256
+        width: 216
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: camaleon_andando_20
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2082
         y: 640
-        width: 256
+        width: 216
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,12 +439,12 @@ TextureImporter:
       name: camaleon_andando_21
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2594
         y: 640
-        width: 256
+        width: 214
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: camaleon_andando_22
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3104
         y: 640
-        width: 256
+        width: 217
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,12 +467,12 @@ TextureImporter:
       name: camaleon_andando_23
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3615
         y: 640
-        width: 256
+        width: 217
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: camaleon_andando_24
       rect:
         serializedVersion: 2
-        x: 0
+        x: 28
         y: 512
-        width: 256
+        width: 228
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -495,12 +495,12 @@ TextureImporter:
       name: camaleon_andando_25
       rect:
         serializedVersion: 2
-        x: 512
+        x: 539
         y: 512
-        width: 256
+        width: 218
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: camaleon_andando_26
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1051
         y: 512
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -523,12 +523,12 @@ TextureImporter:
       name: camaleon_andando_27
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1564
         y: 512
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -537,12 +537,12 @@ TextureImporter:
       name: camaleon_andando_28
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2074
         y: 512
-        width: 256
+        width: 225
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: camaleon_andando_29
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2588
         y: 512
-        width: 256
+        width: 222
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -565,12 +565,12 @@ TextureImporter:
       name: camaleon_andando_30
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3101
         y: 512
-        width: 256
+        width: 220
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -579,12 +579,12 @@ TextureImporter:
       name: camaleon_andando_31
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3612
         y: 512
-        width: 256
+        width: 220
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,12 +593,12 @@ TextureImporter:
       name: camaleon_andando_32
       rect:
         serializedVersion: 2
-        x: 0
+        x: 27
         y: 384
-        width: 256
+        width: 229
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -607,12 +607,12 @@ TextureImporter:
       name: camaleon_andando_33
       rect:
         serializedVersion: 2
-        x: 512
+        x: 539
         y: 384
-        width: 256
+        width: 223
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -621,12 +621,12 @@ TextureImporter:
       name: camaleon_andando_34
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1055
         y: 384
-        width: 256
+        width: 217
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,12 +635,12 @@ TextureImporter:
       name: camaleon_andando_35
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1564
         y: 384
-        width: 256
+        width: 222
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -649,12 +649,12 @@ TextureImporter:
       name: camaleon_andando_36
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2075
         y: 384
-        width: 256
+        width: 224
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -663,12 +663,12 @@ TextureImporter:
       name: camaleon_andando_37
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2588
         y: 384
-        width: 256
+        width: 224
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: camaleon_andando_38
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3102
         y: 384
-        width: 256
+        width: 220
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -691,12 +691,12 @@ TextureImporter:
       name: camaleon_andando_39
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3615
         y: 384
-        width: 256
+        width: 220
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -705,12 +705,12 @@ TextureImporter:
       name: camaleon_andando_40
       rect:
         serializedVersion: 2
-        x: 0
+        x: 30
         y: 256
-        width: 256
+        width: 226
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,12 +719,12 @@ TextureImporter:
       name: camaleon_andando_41
       rect:
         serializedVersion: 2
-        x: 512
+        x: 543
         y: 256
-        width: 256
+        width: 216
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -733,12 +733,12 @@ TextureImporter:
       name: camaleon_andando_42
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 256
+        x: 1057
+        y: 251
+        width: 215
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -747,12 +747,12 @@ TextureImporter:
       name: camaleon_andando_43
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 256
-        width: 256
+        x: 1567
+        y: 254
+        width: 218
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: camaleon_andando_44
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2080
         y: 256
-        width: 256
+        width: 219
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -775,12 +775,12 @@ TextureImporter:
       name: camaleon_andando_45
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2593
         y: 256
-        width: 256
+        width: 214
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -789,12 +789,12 @@ TextureImporter:
       name: camaleon_andando_46
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 256
-        width: 256
+        x: 3107
+        y: 253
+        width: 214
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: camaleon_andando_47
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3617
         y: 256
-        width: 256
+        width: 215
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -817,12 +817,12 @@ TextureImporter:
       name: camaleon_andando_48
       rect:
         serializedVersion: 2
-        x: 0
+        x: 38
         y: 128
-        width: 256
+        width: 218
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -831,12 +831,12 @@ TextureImporter:
       name: camaleon_andando_49
       rect:
         serializedVersion: 2
-        x: 512
+        x: 548
         y: 128
-        width: 256
+        width: 213
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -845,12 +845,12 @@ TextureImporter:
       name: camaleon_andando_50
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1062
         y: 128
-        width: 256
+        width: 210
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -859,12 +859,12 @@ TextureImporter:
       name: camaleon_andando_51
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1570
         y: 128
-        width: 256
+        width: 215
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -873,12 +873,12 @@ TextureImporter:
       name: camaleon_andando_52
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2080
         y: 128
-        width: 256
+        width: 219
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -887,12 +887,12 @@ TextureImporter:
       name: camaleon_andando_53
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 128
-        width: 256
+        x: 2589
+        y: 127
+        width: 219
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -901,12 +901,12 @@ TextureImporter:
       name: camaleon_andando_54
       rect:
         serializedVersion: 2
-        x: 3072
+        x: 3101
         y: 128
-        width: 256
+        width: 219
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -915,12 +915,12 @@ TextureImporter:
       name: camaleon_andando_55
       rect:
         serializedVersion: 2
-        x: 3584
+        x: 3611
         y: 128
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -929,12 +929,12 @@ TextureImporter:
       name: camaleon_andando_56
       rect:
         serializedVersion: 2
-        x: 0
+        x: 29
         y: 0
-        width: 256
+        width: 227
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -943,12 +943,12 @@ TextureImporter:
       name: camaleon_andando_57
       rect:
         serializedVersion: 2
-        x: 512
+        x: 539
         y: 0
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -957,12 +957,12 @@ TextureImporter:
       name: camaleon_andando_58
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1052
         y: 0
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -971,12 +971,12 @@ TextureImporter:
       name: camaleon_andando_59
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1562
         y: 0
-        width: 256
+        width: 221
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -985,12 +985,12 @@ TextureImporter:
       name: camaleon_andando_60
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2075
         y: 0
-        width: 256
+        width: 224
         height: 128
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

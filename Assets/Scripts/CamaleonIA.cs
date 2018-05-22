@@ -9,9 +9,8 @@ public class CamaleonIA : MonoBehaviour {
 	public float minTras, maxTras;
 
 	void Start () {
-		sr = GetComponentInChildren<SpriteRenderer> ();
-		fove = GetComponent<FieldOfViewEnemy> ();
-	}
+		sr = GetComponent<SpriteRenderer> ();
+		fove = GetComponentInChildren<FieldOfViewEnemy> ();	}
 
 	void Update () {
 		dis = getDistance ();
