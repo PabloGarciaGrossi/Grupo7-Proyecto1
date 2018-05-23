@@ -128,6 +128,7 @@ MonoBehaviour:
   engranaje: {fileID: 223887266971495108, guid: 2a8466632e3ccd74f8d2146e5f1ca837,
     type: 2}
   pl: {fileID: 114541073093443340, guid: 71d2eab324addc04ca4787b9520c180f, type: 2}
+  pillaEngranaje: {fileID: 0}
 --- !u!212 &212735418920117974
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -142,7 +143,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6865fd0fd74bc6c40bb5a3ae054d047e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
