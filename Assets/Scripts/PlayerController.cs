@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate () {
 		if (!isDead) {
+			if (Input.GetKey (KeyCode.M))
+				PlayerDeath ();
 			Girar (miraDerecha);
 			DetectaSuelo ();
 			float move = Input.GetAxis ("Horizontal");
