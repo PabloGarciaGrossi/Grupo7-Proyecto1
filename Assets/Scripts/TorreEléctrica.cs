@@ -8,6 +8,8 @@ public class TorreEléctrica : MonoBehaviour {
 	public Camera camera;
 	public GameObject[] electricidad;
 	public GameObject[] particulasdaño;
+	public AudioSource sonidoBoss;
+
 	BossFinal boss;
 	PlayerController player;
 	// Use this for initialization
@@ -32,5 +34,6 @@ public class TorreEléctrica : MonoBehaviour {
 	{
 		for (int i = 0; i < particulasdaño.Length; i++)
 			particulasdaño [i].gameObject.SetActive (true);
+		sonidoBoss.Play ();
 	}
 }
