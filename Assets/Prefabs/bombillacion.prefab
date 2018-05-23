@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1842368823292482}
   m_LocalRotation: {x: 0, y: 0, z: 0.38160548, w: -0.92432535}
-  m_LocalPosition: {x: -29.59, y: 11.87, z: 0.28390884}
+  m_LocalPosition: {x: 28.06168, y: 2.7231297, z: 0.28390884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4825547814597800}
@@ -207,8 +207,8 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   Version: 1.4.3
   SolidColor: 1
-  LightColor: {r: 0.8897059, g: 0.87292236, b: 0.28130406, a: 1}
-  Intensity: 1.9
+  LightColor: {r: 1, g: 1, b: 1, a: 1}
+  Intensity: 0.8
   LightMaterial: {fileID: 2100000, guid: 07e1fb9376a9a3147b7414fe288fffd2, type: 2}
   light2DType: 0
   SortOrderID: -1
