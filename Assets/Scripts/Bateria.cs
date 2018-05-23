@@ -9,8 +9,8 @@ public class Bateria : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.CompareTag ("Player")) {
-			luz.range = 10;
-			fov.viewRadius = 10;
+			luz.range = 7;
+			fov.viewRadius = 7;
 			gameObject.SetActive (false);
 			sonidoBat.Play ();
 		}

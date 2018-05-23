@@ -189,6 +189,7 @@ MonoBehaviour:
   maxVida: 50
   vidaRestante: 0
   enLuz: 0
+  hurtMonster: {fileID: 0}
 --- !u!114 &114383836192589970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,7 +231,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 79a024e5aae468e4a9c64dbbfbbf2934, type: 2}
+  - {fileID: 2100000, guid: 6865fd0fd74bc6c40bb5a3ae054d047e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

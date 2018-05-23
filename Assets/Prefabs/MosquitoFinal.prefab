@@ -228,6 +228,8 @@ MonoBehaviour:
   maxVida: 10
   vidaRestante: 0
   enLuz: 0
+  hurtMonster: {fileID: 82489790385917720, guid: 365244cdebda89d40a19e01925371eaa,
+    type: 2}
 --- !u!114 &114546295874358576
 MonoBehaviour:
   m_ObjectHideFlags: 1

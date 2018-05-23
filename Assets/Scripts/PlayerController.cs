@@ -122,11 +122,12 @@ public class PlayerController : MonoBehaviour {
 	}
 	public IEnumerator Knockback(float KnockDur, float KnockPow, Vector3 KnockbackDir)
 	{
-		float timer = 0;
+		/*float timer = 0;
 		while (KnockDur > timer) {
 			timer += Time.deltaTime;
 			rb.AddForce(new Vector3(KnockbackDir.x*(-10f), KnockbackDir.y * KnockPow, transform.position.z));
-		}
+		}*/
+		GetComponentInChildren<AudioSource> ().Play ();
 				yield return 0;
 	}
 }
