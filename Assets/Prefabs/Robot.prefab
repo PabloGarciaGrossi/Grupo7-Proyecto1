@@ -311,7 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4676898476650666}
   m_Layer: 10
-  m_Name: GameObject
+  m_Name: Efectos de Luz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,7 +825,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1517225090821472}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.847, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4304270539564140}
@@ -990,7 +990,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040585480802742}
   m_LocalRotation: {x: 0, y: 0, z: 0.000008726646, w: 1}
-  m_LocalPosition: {x: 228.48, y: 0.13, z: 0}
+  m_LocalPosition: {x: -7.27, y: -6.05, z: 0}
   m_LocalScale: {x: 0.96, y: 0.7, z: 1}
   m_Children:
   - {fileID: 4427976731718684}
@@ -1039,7 +1039,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1560368333594990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.03}
+  m_LocalPosition: {x: -0.15, y: 0, z: 3.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4535695573513716}
@@ -1137,8 +1137,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1686024409118994}
   m_LocalRotation: {x: -0.49164134, y: 0.5082212, z: -0.5082212, w: 0.4916413}
-  m_LocalPosition: {x: -1.61, y: 0, z: -2.69}
-  m_LocalScale: {x: 1, y: 1, z: 1.2600011}
+  m_LocalPosition: {x: -1.61, y: 0, z: -2.83}
+  m_LocalScale: {x: 1, y: 1, z: 0.66}
   m_Children: []
   m_Father: {fileID: 4676898476650666}
   m_RootOrder: 1
@@ -1322,8 +1322,8 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 0.9517242, b: 0.75, a: 1}
   m_Intensity: 40
-  m_Range: 10
-  m_SpotAngle: 56.119034
+  m_Range: 2
+  m_SpotAngle: 39
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1472,7 +1472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewRadius: 12
-  viewAngle: 53
+  viewAngle: 42
   targetMask:
     serializedVersion: 2
     m_Bits: 512
