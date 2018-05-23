@@ -9,6 +9,7 @@ public class TorreEléctrica : MonoBehaviour {
 	public GameObject[] electricidad;
 	public GameObject[] particulasdaño;
 	public AudioSource sonidoBoss;
+	bool parar = false;
 
 	BossFinal boss;
 	PlayerController player;
@@ -27,15 +28,19 @@ public class TorreEléctrica : MonoBehaviour {
 			player.transform.position = new Vector3 (boss.transform.position.x, boss.transform.position.y - 5, 1);
 			camera.orthographicSize = 35;
 			player.gameObject.SetActive (false);
-			sonidoBoss.Play ();
-			Invoke ("ActivamasTarde", 2.5f);
-			InvokeRepeating ("Bajaintensidadboss", 6f, 0.1f);
+			if (!parar) {
+				Invoke ("ActivamasTarde", 2.5f);
+			}
+			InvokeRepeating ("Bajaintensidadboss", 9f, 0.1f);
+			//Invoke ("Paraparticulas", 8.5f);
 		}
 	}
 	void ActivamasTarde()
 	{
 		for (int i = 0; i < particulasdaño.Length; i++)
 			particulasdaño [i].gameObject.SetActive (true);
+		sonidoBoss.Play ();
+		parar = true;
 	}
 	void Bajaintensidadboss()
 	{
@@ -44,5 +49,13 @@ public class TorreEléctrica : MonoBehaviour {
 		foreach (GameObject rayo in electricidad) {
 			rayo.SetActive (false);
 		}
+		foreach (GameObject part in particulasdaño) {
+			part.gameObject.GetComponent<ParticleSystem> ().Stop ();
+		}
+	}
+	void Paraparticulas()
+	{
+		for (int i = 0; i < particulasdaño.Length; i++)
+			particulasdaño [i].gameObject.SetActive (false);
 	}
 }
