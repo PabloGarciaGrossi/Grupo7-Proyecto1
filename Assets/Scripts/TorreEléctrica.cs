@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TorreEléctrica : MonoBehaviour {
 	public GameObject activador1;
@@ -32,6 +33,7 @@ public class TorreEléctrica : MonoBehaviour {
 				Invoke ("ActivamasTarde", 2.5f);
 			}
 			InvokeRepeating ("Bajaintensidadboss", 9f, 0.1f);
+            Invoke("Creditos", 15f);
 		}
 	}
 	void ActivamasTarde()
@@ -57,4 +59,8 @@ public class TorreEléctrica : MonoBehaviour {
 		for (int i = 0; i < particulasdaño.Length; i++)
 			particulasdaño [i].gameObject.SetActive (false);
 	}
+
+    void Creditos() {
+        SceneManager.LoadScene("Creditos");
+    }
 }
