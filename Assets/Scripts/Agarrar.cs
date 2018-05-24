@@ -13,10 +13,10 @@ public class Agarrar : MonoBehaviour {
 	}
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.O) && enzona) {
-			gameObject.SetActive (false);
-			engranaje.enabled = true;
+			engranaje.gameObject.SetActive (true);
 			pl.grabbed = true;
 			pillaEngranaje.Play ();
+			gameObject.SetActive (false);
 
 		}
 	}
