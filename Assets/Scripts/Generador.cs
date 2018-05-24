@@ -17,6 +17,7 @@ public class Generador : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.O) && pl.grabbed && enzona) {
 			detectado = true;
 			Engranaje.enabled = false;
+			pl.grabbed = false;
 			colocaEngranaje.Play ();
 			gameObject.GetComponent<SpriteRenderer> ().sprite = SprActivado;
 
