@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Boton : MonoBehaviour {
 	public bool activado;
-	//public AudioSource botonAct;
 	public Sprite spriteapagado;
 	public Sprite spriteencendido;
 	void Start(){
@@ -14,7 +13,6 @@ public class Boton : MonoBehaviour {
 		if (other.gameObject.tag == "Player" || other.gameObject.tag == "pushable") {
 			activado = true;
 			GetComponent<SpriteRenderer> ().sprite = spriteencendido;
-			//botonAct.Play ();
 		}
 	}
 	void OnTriggerExit2D (Collider2D other){

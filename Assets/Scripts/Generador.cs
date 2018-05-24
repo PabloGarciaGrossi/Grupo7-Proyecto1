@@ -23,6 +23,7 @@ public class Generador : MonoBehaviour {
 
 		}
 	}
+	//detecta si está en la zona para coger el engranaje
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player")
 			enzona = true;

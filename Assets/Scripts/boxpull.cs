@@ -25,7 +25,6 @@ public class boxpull : MonoBehaviour {
 		lastPos = transform.position;
 	}
 
-	// Update is called once per frame
 	void FixedUpdate () {
 		if (mode == 0) {
 			if (beingPushed == false) {

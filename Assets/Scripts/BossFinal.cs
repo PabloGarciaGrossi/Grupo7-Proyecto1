@@ -13,10 +13,7 @@ public class BossFinal : MonoBehaviour {
 	void Start(){
 		InvokeRepeating ("PruebaSpawner", 3f, 7f);
 	}
-	void Update () {
-		//if (palanca1.GetComponent<Palanca> ().activado && palanca2.GetComponent<Palanca> ().activado)
-			//gameObject.SetActive (false);
-	}
+
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player") {
 			detectado = true;

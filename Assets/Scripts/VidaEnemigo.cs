@@ -65,7 +65,6 @@ public class VidaEnemigo : MonoBehaviour {
 			Destroy (gameObject);
 		vidaRestante = maxVida;
 		gameObject.transform.position = new Vector2 (iniciox, inicioy);
-		//gameObject.GetComponentInChildren<FieldOfViewEnemy> ().Detectado = false;
 	}
 	void Destruir (){
 		gameObject.SetActive (false);

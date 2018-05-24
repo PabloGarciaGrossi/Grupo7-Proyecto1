@@ -5,12 +5,7 @@ using UnityEngine;
 public class PuertaElectrica : MonoBehaviour {
 	public GameObject activador;
 	bool activado = false;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if (activador.tag == "Palanca")
 			activado = activador.GetComponent<Palanca> ().activado;

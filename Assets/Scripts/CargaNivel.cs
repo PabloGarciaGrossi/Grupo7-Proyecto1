@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CargaNivel : MonoBehaviour {
 	public string nivel;
-	// Use this for initialization
+
 	LvlManager lvl;
 	void Start(){
 		lvl = FindObjectOfType<LvlManager> ();

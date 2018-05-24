@@ -32,7 +32,6 @@ public class TorreEléctrica : MonoBehaviour {
 				Invoke ("ActivamasTarde", 2.5f);
 			}
 			InvokeRepeating ("Bajaintensidadboss", 9f, 0.1f);
-			//Invoke ("Paraparticulas", 8.5f);
 		}
 	}
 	void ActivamasTarde()
