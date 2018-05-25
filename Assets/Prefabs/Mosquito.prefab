@@ -74,8 +74,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1198982244682402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.698925, y: -56.8957, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -71.06, y: -68.53, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4918843386892396}
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  playerRange: 6
+  playerRange: 10
   playerlayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -230,9 +230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 10
-  maxVida: 10
+  maxVida: 45
   vidaRestante: 0
   enLuz: 0
+  hurtMonster: {fileID: 0}
 --- !u!114 &114648468633288414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -356,7 +357,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -902697825
+  randomSeed: -2103080195
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -12,14 +12,13 @@ public class GameManager : MonoBehaviour {
 	// Creamos una variable estática para almacenar la instancia única
 	public static GameManager instance = null;
 	public GameObject currentcheckpoint;
-	PlayerController player;
-	Animator playerAnim;
-	VidaEnemigo [] enemigo;
-	BossFinal boss;
-	FocoLuz luz;
-	Bateria[] pila;
-	boxpull [] box;
-	Generador[] engranajes;
+	public PlayerController player;
+	public Animator playerAnim;
+	public VidaEnemigo [] enemigo;
+	VidaEnemigo[] enemigofinal;//Específicamente para los mosquitos del nivel final, que tienen un comportamiento diferente.
+	public BossFinal boss;
+	public FocoLuz luz;
+	public Bateria[] pila;
 	public int Maxvidas;
 	public int curVidas;
 
@@ -42,10 +41,9 @@ public class GameManager : MonoBehaviour {
 		player = FindObjectOfType<PlayerController> ();
 		luz = FindObjectOfType<FocoLuz> ();
 		pila = FindObjectsOfType<Bateria> ();
-		box = FindObjectsOfType<boxpull> ();
-		engranajes = FindObjectsOfType<Generador> ();
 		curVidas = Maxvidas;
 		boss = FindObjectOfType<BossFinal> ();
+		enemigo = FindObjectsOfType<VidaEnemigo> ();
 	}
 	public void ControladorVida()
 	{
@@ -59,12 +57,16 @@ public class GameManager : MonoBehaviour {
 	}
 	public void RespawnPlayer()
 	{
-		enemigo = FindObjectsOfType<VidaEnemigo> ();
-		player.transform.position = currentcheckpoint.transform.position; //Coloca al Jugador donde se ha guardado 
-		playerAnim.SetBool ("Muerte", false);                           	  //el último checkpoint en la clase Checkpoint
+			enemigofinal = FindObjectsOfType<VidaEnemigo> ();
+			player.transform.position = currentcheckpoint.transform.position; //Coloca al Jugador donde se ha guardado 
+			playerAnim.SetBool ("Muerte", false); //el último checkpoint en la clase Checkpoint
 		for (int i = 0; i < enemigo.Length; i++) {//Véase especificaciones en el Checkpoint.cs 
 				enemigo [i].Reset ();
 			}
+		for (int i = 0; i < enemigofinal.Length; i++) {
+			if (enemigofinal [i].tag == "MosquitoFinal")
+				enemigofinal [i].Reset ();
+		}
 			for (int i = 0; i < pila.Length; i++) {
 				pila [i].Reset ();
 			}

@@ -11,7 +11,8 @@ public class CargaNivel : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "Player")
+		if (other.tag == "Player") {
 			lvl.CargaNivel (nivel);
+		}
 	}
 }
